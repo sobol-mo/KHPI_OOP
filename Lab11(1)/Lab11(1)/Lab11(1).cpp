@@ -1,5 +1,9 @@
-
-#define _CRT_SECURE_NO_WARNINGS
+Ôªø/*******************************************************/
+/*           –õ–∞–±–æ—Ä–∞—Ç–æ—Ä–Ω–∞—è  —Ä–∞–±–æ—Ç–∞ 11(1)                */
+/*     –ü—Ä–æ—Å—Ç—ã–µ –∫–ª–∞—Å—Å—ã. –î–æ—Å—Ç—É–ø –∫ —ç–ª–µ–º–µ–Ω—Ç–∞–º –∫–ª–∞—Å—Å–∞       */
+/*        –ü—Ä–∏–º–µ—Ä –≤—ã–ø–æ–ª–Ω–µ–Ω–∏—è. –í–∞—Ä–∏–∞–Ω—Ç #30.              */
+/*******************************************************/
+// –ü–æ—Å–ª–µ —Ä–µ—Ñ–∞–∫—Ç–æ—Ä–∏–Ω–≥–∞ char –Ω–∞ string
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
@@ -10,28 +14,26 @@ using namespace std;
 #define N 3
 
 class church {
-    char name[10];
+    string name;
     char school;
     unsigned int count;
     float square;
 public:
-    void set(char* a, char b, unsigned int c, float d);
-    void get(char* a, char& b, unsigned int& c, float& d);
+    void set(string a, char b, unsigned int c, float d);
+    void get(string a, char& b, unsigned int& c, float& d);
     void show(void);
 };
 
-void church::set(char* a, char b, unsigned int c, float d) {
-    strcpy(name, a);
+void church::set(string a, char b, unsigned int c, float d) {
+    name = a;
     school = b;
     count = c;
     square = d;
 }
 
-void church::get(char* a, char& b, unsigned int& c, float& d)
+void church::get(string a, char& b, unsigned int& c, float& d)
 {
-    //delete[] a;
-    //a = new char[strlen(name) + 1];
-    strcpy(a, name);
+    a = name;
     b = school;
     c = count;
     d = square;
@@ -46,10 +48,8 @@ void church::show(void) {
 
 
 int main(void) {
-
     setlocale(LC_ALL, "ru");
-    char n[10];
-    //n = new char[10];
+    string n;
     char t;
     unsigned int s;
     float h;
@@ -57,25 +57,25 @@ int main(void) {
 
     church obj[N];
     system("cls");
-    cout << "–‡·ÓÚ‡ ÙÛÌÍˆËË SET!\n";
+    cout << "–†–∞–±–æ—Ç–∞ —Ñ—É–Ω–∫—Ü–∏–∏ SET!\n";
     for (i = 0; i < N; i++)
     {
-        cout << "Õ‡Á‚‡ÌËÂ, ÿÍÓÎ‡,  ÓÎË˜ÂÒÚ‚Ó ÏÓÌ‡ıÓ‚, œÎÓ˘‡‰¸ ÁÂÏÎË: ";
+        cout << "–ù–∞–∑–≤–∞–Ω–∏–µ, –®–∫–æ–ª–∞, –ö–æ–ª–∏—á–µ—Å—Ç–≤–æ –º–æ–Ω–∞—Ö–æ–≤, –ü–ª–æ—â–∞–¥—å –∑–µ–º–ª–∏: ";
         cin >> n;
         cin >> t;
         cin >> s;
         cin >> h;
         obj[i].set(n, t, s, h);
     }
-    cout << "–‡·ÓÚ‡ ÙÛÌÍˆËË SHOW!\n";
-    cout << "Õ‡Á‚‡ÌËÂ, ÿÍÓÎ‡,  ÓÎË˜ÂÒÚ‚Ó ÏÓÌ‡ıÓ‚, œÎÓ˘‡‰¸ ÁÂÏÎË: \n";
+    cout << "–†–∞–±–æ—Ç–∞ —Ñ—É–Ω–∫—Ü–∏–∏ SHOW!\n";
+    cout << "–ù–∞–∑–≤–∞–Ω–∏–µ, –®–∫–æ–ª–∞, –ö–æ–ª–∏—á–µ—Å—Ç–≤–æ –º–æ–Ω–∞—Ö–æ–≤, –ü–ª–æ—â–∞–¥—å –∑–µ–º–ª–∏: \n";
     for (i = 0; i < N; i++)
     {
         obj[i].show();
         cout << "\n";
     }
-    cout << "–‡·ÓÚ‡ ÙÛÌÍˆËË GET Ë SHOW!\n";
-    cout << "Õ‡Á‚‡ÌËÂ, ÿÍÓÎ‡,  ÓÎË˜ÂÒÚ‚Ó ÏÓÌ‡ıÓ‚, œÎÓ˘‡‰¸ ÁÂÏÎË: \n";
+    cout << "–†–∞–±–æ—Ç–∞ —Ñ—É–Ω–∫—Ü–∏–∏ GET –∏ SHOW!\n";
+    cout << "–ù–∞–∑–≤–∞–Ω–∏–µ, –®–∫–æ–ª–∞, –ö–æ–ª–∏—á–µ—Å—Ç–≤–æ –º–æ–Ω–∞—Ö–æ–≤, –ü–ª–æ—â–∞–¥—å –∑–µ–º–ª–∏: \n";
     for (i = 0; i < N; i++)
     {
         obj[i].get(n, t, s, h);
@@ -83,6 +83,5 @@ int main(void) {
         cout << "\n";
     }
     _getch();
-    //delete[] n;
     return 0;
 }
