@@ -1,4 +1,4 @@
-#include <iostream>  // std::cout, std::cin
+п»ї#include <iostream>  // std::cout, std::cin
 #include <iomanip>   // setw(), setprisition()
 #include <Windows.h> // SetConsoleOutputCP
 
@@ -7,8 +7,8 @@ using namespace std;
 class Point
 {
 private:
-	// Префікс "m_" = "members" використовується 
-	//для найменування полів класу
+	// РџСЂРµС„С–РєСЃ "m_" = "members" РІРёРєРѕСЂРёСЃС‚РѕРІСѓС”С‚СЊСЃСЏ 
+	//РґР»СЏ РЅР°Р№РјРµРЅСѓРІР°РЅРЅСЏ РїРѕР»С–РІ РєР»Р°СЃСѓ
 
 	int m_x;
 	int m_y;
@@ -18,11 +18,11 @@ public:
 	Point(const int x, const int y = 16);
 	Point(const Point& point);
 
-	//Група "сетерів" 
+	//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ" 
 	void setX(const int x);
 	void setY(const int y);
 
-	//Група "гетерів"
+	//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
 	int getX() const;
 	int getY() const;
 
