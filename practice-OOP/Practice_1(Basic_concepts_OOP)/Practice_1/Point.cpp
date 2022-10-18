@@ -1,40 +1,40 @@
-#include "Point.h"
+п»ї#include "Point.h"
 
 
-//Базовий конструктор
+//Р‘Р°Р·РѕРІРёР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 Point::Point() : m_x(0), m_y(0)
 {
 }
 
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Point::Point(const int x, const int y) :
 	m_x(x), m_y(y)
 {
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Point::Point(const Point& point) :
 	m_x(point.m_x), m_y(point.m_y)
 {
 }
 
-//Група "сетерів"
+//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 void Point::setX(const int x) { m_x = x; }
 void Point::setY(const int y) { m_y = y; }
 
-//Група "гетерів"
+//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
 int Point::getX() const { return m_x; }
 int Point::getY() const { return m_y; }
 
-//Метод копіювання іншого об'єкту
+//РњРµС‚РѕРґ РєРѕРїС–СЋРІР°РЅРЅСЏ С–РЅС€РѕРіРѕ РѕР±'С”РєС‚Сѓ
 void Point::copy(const Point& point)
 {
 	m_x = point.m_x;
 	m_y = point.m_y;
 }
 
-//Метод виведення даних
+//РњРµС‚РѕРґ РІРёРІРµРґРµРЅРЅСЏ РґР°РЅРёС…
 void Point::show() const
 {
 	cout << " X =" << setw(3) << m_x
