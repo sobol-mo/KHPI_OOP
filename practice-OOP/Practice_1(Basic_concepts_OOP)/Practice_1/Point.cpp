@@ -2,41 +2,43 @@
 
 
 //Базовий конструктор
-Point::Point() : m_x(0), m_y(0)
+Point::Point() : x(0), y(0)
 {
 }
 
 
 //Конструктор з параметрами
-Point::Point(const int x, const int y) :
-	m_x(x), m_y(y)
+Point::Point(const int x, const int y)
 {
+	this->x = x;
+	this->y = y;
 }
 
 //Конструктор копіювання
-Point::Point(const Point& point) :
-	m_x(point.m_x), m_y(point.m_y)
+Point::Point(const Point& point)
 {
+	this->x = point.x;
+	this->y = point.y;
 }
 
 //Група "сетерів"
-void Point::setX(const int x) { m_x = x; }
-void Point::setY(const int y) { m_y = y; }
+void Point::setX(const int x) { this->x = x; }
+void Point::setY(const int y) { this->y = y; }
 
 //Група "гетерів"
-int Point::getX() const { return m_x; }
-int Point::getY() const { return m_y; }
+int Point::getX() const { return x; }
+int Point::getY() const { return y; }
 
 //Метод копіювання іншого об'єкту
 void Point::copy(const Point& point)
 {
-	m_x = point.m_x;
-	m_y = point.m_y;
+	this->x = point.x;
+	this->y = point.y;
 }
 
 //Метод виведення даних
 void Point::show() const
 {
-	cout << " X =" << setw(3) << m_x
-		<< "  Y =" << setw(3) << m_y << endl;
+	cout << " X =" << setw(3) << x
+		<< "  Y =" << setw(3) << y << endl;
 }

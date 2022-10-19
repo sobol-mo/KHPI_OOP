@@ -7,15 +7,17 @@ using namespace std;
 class Point
 {
 private:
-	// Префікс "m_" = "members" використовується 
-	//для найменування полів класу
-
-	int m_x;
-	int m_y;
+	int x;
+	int y;
 
 public:
+	//Конструктор за замовчуванням
 	Point();
+
+	//Конструктор з параметрами
 	Point(const int x, const int y = 16);
+
+	//Конструктор копіювання
 	Point(const Point& point);
 
 	//Група "сетерів" 
@@ -26,6 +28,9 @@ public:
 	int getX() const;
 	int getY() const;
 
+	//Метод копіювання об'єкту
 	void copy(const Point& point);
+
+	//Метод друку об'єкту
 	void show() const;
 };
