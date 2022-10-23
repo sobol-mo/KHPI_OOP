@@ -1,39 +1,40 @@
 ﻿#include "MyArray.h"
 
+//Функція для отримання випадкового числа
 int randomNumber(const int min, const int max) {
 	
 	int randNum = rand() % (max - min) + min;
 	return randNum;
 }
 
-//Конструктор за замовченням
+//Конструктор за замовчуванням
 MyArray::MyArray():
-	m_sizeArr(10)
+	sizeArr(10)
 {
-	m_array = new int[m_sizeArr];
-	for (int i = 0; i < m_sizeArr; i++)
+	this->array = new int[sizeArr];
+	for (int i = 0; i < sizeArr; i++)
 	{
-		*(m_array + i) = randomNumber(1, 30);
+		*(array + i) = randomNumber(1, 30);
 	}
 }
 
 //Конструктор з параметрами
 MyArray::MyArray(const int size, const bool type):
-	m_sizeArr(size)
+	sizeArr(size)
 {
-	srand(time(NULL));
-	m_array = new int[m_sizeArr];
+	this->array = new int[sizeArr];
+
 	if (type == 0) {
-		for (int i = 0; i < m_sizeArr; i++)
+		for (int i = 0; i < sizeArr; i++)
 		{
 			cout << "Елемент " << i << ":";
-			cin >> *(m_array + i);
+			cin >> *(array + i);
 		}
 	}
 	else {
-		for (int i = 0; i < m_sizeArr; i++)
+		for (int i = 0; i < sizeArr; i++)
 		{
-			*(m_array + i) = randomNumber(1, 30);
+			*(array + i) = randomNumber(1, 30);
 		}
 	}
 }
@@ -41,51 +42,55 @@ MyArray::MyArray(const int size, const bool type):
 //Деструктор
 MyArray::~MyArray()
 {
-	delete[] m_array;
+	delete[] this->array;
 }
 
 //Метод друку масиву
 void MyArray::printArray() const
 {
 	cout << "Масив: ";
-	for (int i = 0; i < m_sizeArr; i++)
+	for (int i = 0; i < sizeArr; i++)
 	{
-		cout << setw(4) << *(m_array + i);
+		cout << setw(4) << *(array + i);
 	}
 }
 
 //Метод додавання числа в кінець масиву
 void MyArray::pushBack(const int number)
 {
-	int* tempArr = new int[m_sizeArr + 1];
-	for (int i = 0; i < m_sizeArr; i++)
-	{
-		*(tempArr + i) = *(m_array + i);
-	}
-	*(tempArr + m_sizeArr) = number;
+	int* tempArr = new int[sizeArr + 1];
 
-	delete[]m_array;
-	m_array = tempArr;
-	m_sizeArr++;
+	for (int i = 0; i < sizeArr; i++)
+	{
+		*(tempArr + i) = *(array + i);
+	}
+	*(tempArr + sizeArr) = number;
+
+	delete[] this->array;
+	this->array = tempArr;
+	this->sizeArr++;
 }
 
-//Метод сортування масиву(Сортування Шелла)
+//Метод сортування масиву
+//Продемонстровано сортування Шелла
 void MyArray::sortArray()
 {
-	int i, j, step;
-	int temp;
-	for (step = m_sizeArr / 2; step > 0; step /= 2) {
-		for (i = step; i < m_sizeArr; i++)
+	int i = 0, j = 0;
+	int step = 0;
+	int temp = 0;
+
+	for (step = sizeArr / 2; step > 0; step /= 2) {
+		for (i = step; i < sizeArr; i++)
 		{
-			temp = m_array[i];
+			temp = array[i];
 			for (j = i; j >= step; j -= step)
 			{
-				if (temp < m_array[j - step])
-					m_array[j] = m_array[j - step];
+				if (temp < array[j - step])
+					array[j] = array[j - step];
 				else
 					break;
 			}
-			m_array[j] = temp;
+			array[j] = temp;
 		}
 	}
 }
