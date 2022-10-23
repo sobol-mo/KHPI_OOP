@@ -1,56 +1,56 @@
 ﻿#include "Product.h"
 
 //Оголошення змінної націнки
-int Product::m_markup = 10;
+int Product::markup = 10;
 
 //Конструктор за замовчуванням
 Product::Product() :
-	m_name(""), m_wholesalePrice(0), m_retailPrice(0)
+	name(""), wholesalePrice(0), retailPrice(0)
 {
 }
 
 //Група "сетерів"
 void Product::setName(const string& name)
 {
-	m_name = name;
+	this->name = name;
 }
 
 void Product::setWholesalePrice(const float wholesalePrice)
 {
-	m_wholesalePrice = wholesalePrice;
+	this->wholesalePrice = wholesalePrice;
 }
 
 void Product::setRetailPrice(const float retailPrice)
 {
-	m_retailPrice = retailPrice;
+	this->retailPrice = retailPrice;
 }
 
 //Група "гетерів"
 string Product::getName() const
 {
-	return m_name;
+	return name;
 }
 
 float Product::getWholesalePrice() const
 {
-	return m_wholesalePrice;
+	return wholesalePrice;
 }
 
 float Product::getRetailPrice() const
 {
-	return m_retailPrice;
+	return retailPrice;
 }
 
 //Метод підрахунку роздрібної ціни
 float Product::calcRetailPrice()
 {
-	m_retailPrice = m_wholesalePrice + m_wholesalePrice *
-		m_markup / 100;
-	return m_retailPrice;
+	retailPrice = wholesalePrice + wholesalePrice *
+		markup / 100;
+	return retailPrice;
 }
 
 //Метод зміни націнки
 void Product::markupChange()
 {
-	m_markup = 25;
+	this->markup = 25;
 }

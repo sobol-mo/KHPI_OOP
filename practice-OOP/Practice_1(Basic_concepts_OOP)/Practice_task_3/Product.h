@@ -9,12 +9,13 @@ using namespace std;
 class Product
 {
 private:
-	string m_name;
-	float m_wholesalePrice; //оптова ціна
-	float m_retailPrice; //роздрібна ціна
-	static int m_markup; //націнка
+	string name;
+	float wholesalePrice; //оптова ціна
+	float retailPrice; //роздрібна ціна
+	static int markup; //націнка
 
 public:
+	//Конструктор за замовчуванням
 	Product();
 
 	//Група "сетерів"
@@ -29,6 +30,7 @@ public:
 
 	//Метод для розрахунку роздрібної ціни
 	float calcRetailPrice();
+
 	//Метод для зміни націнки
 	void markupChange();
 
