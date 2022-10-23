@@ -9,12 +9,13 @@ using namespace std;
 class Phone
 {
 private:
-	int m_code;
-	int m_phoneNumber;
+	int code;
+	int phoneNumber;
 
 public:
 	//Конструктор за замовчуванням
 	Phone();
+
 	//Конструктор з параметрами
 	Phone(const int code, const int phoneNumber);
 

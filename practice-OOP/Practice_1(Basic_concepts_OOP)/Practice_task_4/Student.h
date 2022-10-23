@@ -5,14 +5,15 @@
 class Student
 {
 private:
-	string m_name;
-	Phone m_phoneStud[2];
-	const int m_group;
-	static int m_countStudent;
+	string name;
+	Phone phoneStud[2];
+	const int group;
+	static int countStudent;
 
 public:
 	//Конструктор за замовчуванням
 	Student();
+
 	//Конструктор з параметрами
 	Student(const string& name, const int group,
 		const int numPhoneFirst, const int numPhoneSecond,
