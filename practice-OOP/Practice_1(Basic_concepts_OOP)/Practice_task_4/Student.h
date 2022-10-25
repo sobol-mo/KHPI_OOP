@@ -16,8 +16,8 @@ public:
 
 	//Конструктор з параметрами
 	Student(const string& name, const int group,
-		const int numPhoneFirst, const int numPhoneSecond,
-		const int codeFirst, const int codeSecond);
+	const int numPhoneFirst, const int numPhoneSecond,
+	const int codeFirst, const int codeSecond);
 
 	//Метод друку інформації
 	void printInfo() const;
