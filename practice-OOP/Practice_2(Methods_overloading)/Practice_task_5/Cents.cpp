@@ -1,54 +1,54 @@
-#include "Cents.h"
+ï»¿#include "Cents.h"
 #include "Dollars.h"
 
-//Êîíñòðóêòîð ç ïàðàìåòðàìè
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸
 Cents::Cents(const int cents)
 {
 	this->numberOfCents = cents;
 }
 
-//Êîíñòðóêòîð êîï³þâàííÿ
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ
 Cents::Cents(const Cents& cents)
 {
 	this->numberOfCents =
 		cents.numberOfCents;
 }
 
-//Ãåòåð
+//Ð“ÐµÑ‚ÐµÑ€
 int Cents::getCents() const
 {
 	return this->numberOfCents;
 }
 
-//Ñåòåð
+//Ð¡ÐµÑ‚ÐµÑ€
 void Cents::setCents(const int cents)
 {
 	this->numberOfCents = cents;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(+)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(+)
 Cents Cents::operator+(const Cents& cents)
 {
 	return Cents(this->numberOfCents 
 		+ cents.numberOfCents);
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(+)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(+)
 Cents Cents::operator+(const Dollars& dollars)
 {
 	return Cents(this->numberOfCents 
 		+ dollars.getDollars() * 100);
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà("()")
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°("()")
 void Cents::operator()(const bool flag)
 {
 	if (flag == 1) {
 		
 		while (1)
 		{	
-			//ßêùî ê³ëüê³ñòü íàö³ëî ä³ëèòüñÿ
-			//íà 100 -> âèõîäèìî ç öèêëó
+			//Ð¯ÐºÑ‰Ð¾ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð½Ð°Ñ†Ñ–Ð»Ð¾ Ð´Ñ–Ð»Ð¸Ñ‚ÑŒÑÑ
+			//Ð½Ð° 100 -> Ð²Ð¸Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð· Ñ†Ð¸ÐºÐ»Ñƒ
 			if (numberOfCents % 100 == 0) {
 				break;
 			}

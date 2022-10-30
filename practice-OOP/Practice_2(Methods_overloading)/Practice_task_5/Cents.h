@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -12,19 +12,19 @@ private:
 	int numberOfCents;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Cents(const int cents = 0);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Cents(const Cents& cents);
 
-	//Гетер
+	//Р“РµС‚РµСЂ
 	int getCents() const;
 
-	//Сетер
+	//РЎРµС‚РµСЂ
 	void setCents(const int cents);
 
-	//Перевантаження операторів
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ
 	Cents operator+(const Cents& cents);
 	Cents operator+(const Dollars& dollars);
 	void operator()(const bool flag);

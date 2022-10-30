@@ -1,45 +1,45 @@
-#include "Dollars.h"
+ï»¿#include "Dollars.h"
 #include "Cents.h"
 
-//Êîíñòðóêòîð ç ïàðàìåòðàìè
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸
 Dollars::Dollars(const int dollars)
 {
 	this->numberOfDollars = dollars;
 }
 
-//Êîíñòðóêòîð êîï³þâàííÿ
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ
 Dollars::Dollars(const Dollars& dollars)
 {
 	this->numberOfDollars =
 		dollars.numberOfDollars;
 }
 
-//Ãåòåð
+//Ð“ÐµÑ‚ÐµÑ€
 int Dollars::getDollars() const
 {
 	return this->numberOfDollars;
 }
 
-//Ñåòåð
+//Ð¡ÐµÑ‚ÐµÑ€
 void Dollars::setDollars(const int dollars)
 {
 	this->numberOfDollars = dollars;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(+)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(+)
 Dollars Dollars::operator+(const Dollars& dollars)
 {
 	return Dollars(this->numberOfDollars
 		+ dollars.numberOfDollars);
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(+)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(+)
 Dollars Dollars::operator+(const Cents& cents)
 {
 	return (this->numberOfDollars + cents.getCents()/100);
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(=)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(=)
 Dollars* Dollars::operator=(const Dollars& dollars)
 {
 	this->numberOfDollars = dollars.numberOfDollars;
@@ -47,7 +47,7 @@ Dollars* Dollars::operator=(const Dollars& dollars)
 	return this;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(==)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(==)
 bool Dollars::operator==(const Dollars& dollars)
 {
 	return (this->numberOfDollars == dollars.numberOfDollars);
