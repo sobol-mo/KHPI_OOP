@@ -58,19 +58,19 @@ BankAccount* BankAccount::operator=(const
 
 //Перевантаження оператора(+)
 BankAccount BankAccount::operator+(const 
-							BankAccount& bankAcc)
+					BankAccount& bankAcc)
 {
 	BankAccount tempAcc;
 	tempAcc.balance = this->balance + bankAcc.balance;
 	tempAcc.depositInterest = this->depositInterest +
-							  bankAcc.depositInterest;
+		bankAcc.depositInterest;
 
 	return tempAcc;
 }
 
 //Перевантаження оператора("()")
-void BankAccount::operator()(const int  balance, 
-							const int depositInterest)
+void BankAccount::operator()(const int  balance,
+					const int depositInterest)
 {
 	if (balance * depositInterest / 100 >
 		this->balance * this->depositInterest / 100) {
