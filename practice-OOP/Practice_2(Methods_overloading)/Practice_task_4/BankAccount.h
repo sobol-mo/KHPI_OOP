@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -12,25 +12,25 @@ private:
 	int depositInterest;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	BankAccount(int balance = 0,
 		int depositInterest = 0);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	BankAccount(const BankAccount& bankAcc);
 
-	//Група "гетерів"
+	//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
     int getBalance() const;
 	int getDepositInterest() const;
 
-	//Група "сетерів"
+	//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 	void setBalance(const int balance);
 	void setDepositInterest(const int deposInterest);
 
-	//Функція розрахунку доходу від вкладу
+	//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РґРѕС…РѕРґСѓ РІС–Рґ РІРєР»Р°РґСѓ
 	int annualIncome() const;
 
-	//Перевантаження операторів
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ
 	BankAccount* operator=(const BankAccount& bankAcc);
 	BankAccount operator+(const BankAccount& bankAcc);
 	void operator()(const int balance,

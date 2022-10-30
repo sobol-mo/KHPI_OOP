@@ -1,6 +1,6 @@
-#include "BankAccount.h"
+ï»¿#include "BankAccount.h"
 
-//Êîíñòðóêòîð ç ïàðàìåòðàìè
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸
 BankAccount::BankAccount(int balance , 
 	int depositInterest )
 {
@@ -8,14 +8,14 @@ BankAccount::BankAccount(int balance ,
 	this->depositInterest = depositInterest;
 }
 
-//Êîíñòðóêòîð êîï³þâàííÿ
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ
 BankAccount::BankAccount(const BankAccount& bankAcc)
 {
 	this->balance = bankAcc.balance;
 	this->depositInterest = bankAcc.depositInterest;
 }
 
-//Ãðóïà "ãåòåð³â"
+//Ð“Ñ€ÑƒÐ¿Ð° "Ð³ÐµÑ‚ÐµÑ€Ñ–Ð²"
 int BankAccount::getBalance() const
 {
 	return this->balance;
@@ -26,7 +26,7 @@ int BankAccount::getDepositInterest() const
 	return this->depositInterest;
 }
 
-//Ãðóïà "ñåòåð³â"
+//Ð“Ñ€ÑƒÐ¿Ð° "ÑÐµÑ‚ÐµÑ€Ñ–Ð²"
 void BankAccount::setBalance(const int balance)
 {
 	this->balance = balance;
@@ -39,13 +39,13 @@ void BankAccount::setDepositInterest(const
 }
 
 
-//Ôóíêö³ÿ ðîçðàõóíêó äîõîäó â³ä âêëàäó
+//Ð¤ÑƒÐ½ÐºÑ†Ñ–Ñ Ñ€Ð¾Ð·Ñ€Ð°Ñ…ÑƒÐ½ÐºÑƒ Ð´Ð¾Ñ…Ð¾Ð´Ñƒ Ð²Ñ–Ð´ Ð²ÐºÐ»Ð°Ð´Ñƒ
 int BankAccount::annualIncome() const
 {
 	return (balance * depositInterest / 100);
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(=)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(=)
 BankAccount* BankAccount::operator=(const
 							BankAccount& bankAcc)
 {
@@ -56,7 +56,7 @@ BankAccount* BankAccount::operator=(const
 	return this;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(+)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(+)
 BankAccount BankAccount::operator+(const 
 							BankAccount& bankAcc)
 {
@@ -68,7 +68,7 @@ BankAccount BankAccount::operator+(const
 	return tempAcc;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà("()")
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°("()")
 void BankAccount::operator()(const int  balance, 
 							const int depositInterest)
 {
@@ -77,9 +77,9 @@ void BankAccount::operator()(const int  balance,
 
 		this->balance = balance;
 		this->depositInterest = depositInterest;
-		cout << "Äàí³ çì³íåíî!";
+		cout << "Ð”Ð°Ð½Ñ– Ð·Ð¼Ñ–Ð½ÐµÐ½Ð¾!";
 	}
 	else {
-		cout << "Äàí³ íå çì³íåíî!";
+		cout << "Ð”Ð°Ð½Ñ– Ð½Ðµ Ð·Ð¼Ñ–Ð½ÐµÐ½Ð¾!";
 	}
 }
