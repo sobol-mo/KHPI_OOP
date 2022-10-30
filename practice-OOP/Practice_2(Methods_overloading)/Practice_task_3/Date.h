@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -13,24 +13,24 @@ private:
 	int year;
 
 public:
-	//Конструктор за замовчуванням
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 	Date();
 
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Date(const int day, const int month, const int year);
 	 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Date(const Date& date);
 
-	//Група "сетерів"
+	//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 	void setDay(const int day);
 	void setMonth(const int month);
 	void setYear(const int year);
 
-	//Метод друку дати
+	//РњРµС‚РѕРґ РґСЂСѓРєСѓ РґР°С‚Рё
 	void printDate() const;
 
-	//Перевантаження операторів(через методи)
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ(С‡РµСЂРµР· РјРµС‚РѕРґРё)
 	Date operator- (const Date& date);
 	bool operator== (const Date& date) const;
 	bool operator!= (const Date& date) const;

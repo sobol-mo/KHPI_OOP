@@ -1,12 +1,12 @@
-#include "Date.h"
+п»ї#include "Date.h"
 
-//Конструктор за замовчуванням
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 Date::Date():
 	day(1),month(1),year(1)
 {
 }
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Date::Date(const int day, const int month, const int year)
 {
 	this->day = ((day > 31 || day < 1) ? 31 : day);
@@ -14,7 +14,7 @@ Date::Date(const int day, const int month, const int year)
 	this->year = (year <= 0 ? 1 : year);
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Date::Date(const Date& date)
 {
 	this->day = date.day;
@@ -22,7 +22,7 @@ Date::Date(const Date& date)
 	this->year = date.year;
 }
 
-//Група "сетерів"
+//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 void Date::setDay(const int day)
 {
 	this->day = (day > 31 ? 31 : day);
@@ -38,7 +38,7 @@ void Date::setYear(const int year)
 	this->year = (year <= 0 ? 1 : year);
 }
 
-//Метод друку дати
+//РњРµС‚РѕРґ РґСЂСѓРєСѓ РґР°С‚Рё
 void Date::printDate() const
 {
 	cout << day <<
@@ -46,7 +46,7 @@ void Date::printDate() const
 	    year << endl;
 }
 
-//Перевантаження оператора(-)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(-)
 Date Date::operator-(const Date& date)
 {
 	int year = this->year - date.year;
@@ -67,46 +67,46 @@ Date Date::operator-(const Date& date)
 	return Date(day, month, year);
 }
 
-//Перевантаження оператора(==)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(==)
 bool Date::operator==(const Date& date) const
 {
 	return (day == date.day) && (month == date.month) 
 		&& (year == date.year);
 }
 
-//Перевантаження оператора(!=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(!=)
 bool Date::operator!=(const Date& date) const
 {
 	return !(*this == date);
 }
 
-//Перевантаження оператора(>)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>)
 bool Date::operator>(const Date& date) const
 {
 	return (day > date.day) && (month > date.month)
 		&& (year > date.year);
 }
 
-//Перевантаження оператора(<)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<)
 bool Date::operator<(const Date& date)const
 {
 	return (day < date.day) && (month < date.month)
 		&& (year < date.year);
 }
 
-//Перевантаження оператора(>=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>=)
 bool Date::operator>=(const Date& date) const
 {
 	return !(*this < date);
 }
 
-//Перевантаження оператора(<=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<=)
 bool Date::operator<=(const Date& date)const
 {
 	return !(*this > date);
 }
 
-//Перевантаження оператора(=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 Date Date::operator=(const Date& date)
 {
 	this->day = date.day;
@@ -115,7 +115,7 @@ Date Date::operator=(const Date& date)
 	return *this;
 }
 
-//Перевантаження оператора("()")
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°("()")
 void Date::operator()(const int day, const int month, const int year)
 {
 	this->day = ((day > 31 || day < 1) ? 31 : day);
