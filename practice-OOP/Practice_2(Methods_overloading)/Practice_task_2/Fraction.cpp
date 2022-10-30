@@ -1,26 +1,26 @@
-#include "Fraction.h"
+п»ї#include "Fraction.h"
 
-//Конструктор за замовченням
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡РµРЅРЅСЏРј
 Fraction::Fraction():
 	numerator(0),denominator(0)
 {
 }
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Fraction::Fraction(const int numer, const int denom)
 {
 	this->numerator = numer;
 	this->denominator = denom;
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Fraction::Fraction(const Fraction& fr)
 {
 	this->numerator = fr.numerator;
 	this->denominator = fr.denominator;
 }
 
-//Группа "сетерів"
+//Р“СЂСѓРїРїР° "СЃРµС‚РµСЂС–РІ"
 void Fraction::setNumerator(const int numer)
 {
 	this->numerator = numer;
@@ -31,13 +31,13 @@ void Fraction::setDenominator(const int denom)
 	this->numerator = denom;
 }
 
-//Метод друку дробу
+//РњРµС‚РѕРґ РґСЂСѓРєСѓ РґСЂРѕР±Сѓ
 void Fraction::printFraction() const
 {
 	cout << numerator << "/" << denominator;
 }
 
-//Перевантаження оператора (+)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР° (+)
 Fraction Fraction::operator+(const Fraction& fr)
 {
 	int tempDenom = denominator * fr.denominator;
@@ -47,7 +47,7 @@ Fraction Fraction::operator+(const Fraction& fr)
 }
 
 
-//Перевантаження оператора (-)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР° (-)
 Fraction Fraction::operator-(const Fraction& fr)
 {
 	int tempDenom = denominator * fr.denominator;
@@ -56,21 +56,21 @@ Fraction Fraction::operator-(const Fraction& fr)
 	return Fraction(tempNumer, tempDenom);
 }
 
-//Перевантаження оператора (*)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР° (*)
 Fraction Fraction::operator*(const Fraction& fr)
 {
 	return Fraction(numerator*fr.numerator,
 		denominator * fr.denominator);
 }
 
-//Перевантаження оператора (/)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР° (/)
 Fraction Fraction::operator/(const Fraction& fr)
 {
 	return Fraction(numerator* fr.denominator,
 		denominator*fr.numerator);
 }
 
-//Перевантаження оператора (=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР° (=)
 Fraction Fraction::operator=(const Fraction& fr)
 {
 	this->numerator = fr.numerator;

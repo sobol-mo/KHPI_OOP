@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -12,23 +12,23 @@ private:
 	int denominator;
 
 public:
-	//Конструктор за замовчуванням
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 	Fraction();
 
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Fraction(const int numer, const int denom);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Fraction(const Fraction& fr);
 
-	//Группа "сетерів"
+	//Р“СЂСѓРїРїР° "СЃРµС‚РµСЂС–РІ"
 	void setNumerator(const int numer);
 	void setDenominator(const int denom);
 
-	//Метод друку дробу
+	//РњРµС‚РѕРґ РґСЂСѓРєСѓ РґСЂРѕР±Сѓ
 	void printFraction() const;
 
-	//Перевантаження операторів
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ
 	Fraction operator+(const Fraction& fr);
 	Fraction operator-(const Fraction& fr);
 	Fraction operator*(const Fraction& fr);
