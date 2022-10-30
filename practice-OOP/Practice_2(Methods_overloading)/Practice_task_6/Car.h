@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -13,17 +13,17 @@ private:
 	int price;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Car(string carBrand = "brand1", int price = 10);
 
-	//Група "гетерів"
+	//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
 	string getBrand() const;
 	int getPrice() const;
 
-	//Група "сетерів"
+	//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 	void setBrand(const string& carBrand);
 	void setPrice(const int price);
 
-	//Перевантаження оператора(=)
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 	Car* operator=(const Car& car);
 };

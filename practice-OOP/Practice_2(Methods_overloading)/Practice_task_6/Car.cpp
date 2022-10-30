@@ -1,13 +1,13 @@
-#include "Car.h"
+ï»¿#include "Car.h"
 
-//Êîíñòðóêòîð ç ïàðàìåòðàìè
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸
 Car::Car(string carBrand, int price)
 {
 	this->carBrand = carBrand;
 	this->price = price;
 }
 
-//Ãðóïà "ãåòåð³â"
+//Ð“Ñ€ÑƒÐ¿Ð° "Ð³ÐµÑ‚ÐµÑ€Ñ–Ð²"
 string Car::getBrand() const
 {
 	return this->carBrand;
@@ -18,7 +18,7 @@ int Car::getPrice() const
 	return this->price;
 }
 
-//Ãðóïà "ñåòåð³â"
+//Ð“Ñ€ÑƒÐ¿Ð° "ÑÐµÑ‚ÐµÑ€Ñ–Ð²"
 void Car::setBrand(const string& carBrand)
 {
 	this->carBrand = carBrand;
@@ -29,7 +29,7 @@ void Car::setPrice(const int price)
 	this->price = price;
 }
 
-//Ïåðåâàíòàæåííÿ îïåðàòîðà(=)
+//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(=)
 Car* Car::operator=(const Car& car)
 {
 	this->carBrand = car.carBrand;

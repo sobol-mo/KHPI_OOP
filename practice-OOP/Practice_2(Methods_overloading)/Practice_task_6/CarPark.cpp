@@ -1,6 +1,6 @@
-#include "CarPark.h"
+п»ї#include "CarPark.h"
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 CarPark::CarPark(Car* masCars, int size)
 {
 	this->masCars = new Car[size];
@@ -12,37 +12,37 @@ CarPark::CarPark(Car* masCars, int size)
 	}
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 CarPark::CarPark(const CarPark& carPark)
 {
 	*this = carPark;
 }
 
-//Деструктор
+//Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 CarPark::~CarPark()
 {
 	delete[] masCars;
 }
 
-//Гетер розміру масиву
+//Р“РµС‚РµСЂ СЂРѕР·РјС–СЂСѓ РјР°СЃРёРІСѓ
 int CarPark::getSize() const
 {
 	return this->size;
 }
 
-//Функція друку масиву
+//Р¤СѓРЅРєС†С–СЏ РґСЂСѓРєСѓ РјР°СЃРёРІСѓ
 void CarPark::print() const
 {
 	for (int i = 0; i < size; i++)
 	{
-		cout << i + 1 << ". Марка: " 
+		cout << i + 1 << ". РњР°СЂРєР°: " 
 			<< masCars[i].getBrand()
-			<< "  Ціна: " << masCars[i].getPrice() 
+			<< "  Р¦С–РЅР°: " << masCars[i].getPrice() 
 			<< endl;
 	}
 }
 
-//Перевантаження оператора(=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 CarPark* CarPark::operator=(const CarPark& carPark)
 {
 	Car* tempMas = new Car[carPark.getSize()];
@@ -60,7 +60,7 @@ CarPark* CarPark::operator=(const CarPark& carPark)
 	return this;
 }
 
-//Перевантаження оператора(+)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(+)
 CarPark CarPark::operator+(const Car& car)
 {
 	Car* tempMas = new Car[this->size + 1];
@@ -77,7 +77,7 @@ CarPark CarPark::operator+(const Car& car)
 	return CarPark(tempMas, this->size + 1);
 }
 
-//Перевантаження оператора("[]")
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°("[]")
 Car& CarPark::operator[](const int index)
 {
 	if (index < 0 || index > size - 1) {

@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "Car.h"
 
@@ -9,22 +9,22 @@ private:
 	int size;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	CarPark(Car* masCars, int size);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	CarPark(const CarPark& carPark);
 
-	//Деструктор
+	//Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	~CarPark();
 
-	//Гетер
+	//Р“РµС‚РµСЂ
 	int getSize() const;
 
-	//Функція друку масиву машин
+	//Р¤СѓРЅРєС†С–СЏ РґСЂСѓРєСѓ РјР°СЃРёРІСѓ РјР°С€РёРЅ
 	void print() const;
 
-	//Перевантаження операторів
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ
 	CarPark* operator=(const CarPark& carPark);
 	CarPark operator+(const Car& car);
 	Car& operator[](const int index);
