@@ -1,54 +1,54 @@
-#include "Square.h"
+п»ї#include "Square.h"
 
-//Конструктор за замовчуванням
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 Square::Square():
 	side(5)
 {
 }
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Square::Square(const int side)
 {
 	this->side = side;
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Square::Square(const Square& sqre)
 {
 	this->side = sqre.side;
 }
 
-//"гетер"
+//"РіРµС‚РµСЂ"
 int Square::getSide() const
 {
 	return side;
 }
 
-//"сетер"
+//"СЃРµС‚РµСЂ"
 void Square::setSide(const int side)
 {
 	this->side = side;
 }
 
-//Перевантаження оператора(+)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(+)
 Square Square::operator+(const Square& sqre)
 {
 	return Square(side + sqre.side);
 }
 
-//Перевантаження оператора(-)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(-)
 Square Square::operator-(const Square& sqre)
 {
 	return Square(side - sqre.side);
 }
 
-//Перевантаження оператора(*)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(*)
 Square Square::operator*(const Square& sqre)
 {
 	return Square(side * sqre.side);
 }
 
-//Перевантаження оператора(=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 Square Square::operator=(const Square& sqre)
 {
 	side = sqre.side;

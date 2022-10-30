@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -11,20 +11,20 @@ private:
 	int side;
 
 public:
-	//Конструктор за замовчуванням
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 	Square();
 
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Square(const int side);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Square(const Square& sqre);
 
-	//Група гетерів
+	//Р“СЂСѓРїР° РіРµС‚РµСЂС–РІ
 	int getSide() const;
 	void setSide(const int side);
 
-	//Перевантаження через метод класу
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ С‡РµСЂРµР· РјРµС‚РѕРґ РєР»Р°СЃСѓ
 	Square operator+(const Square& sqre);
 	Square operator-(const Square& sqre);
 	Square operator*(const Square& sqre);
