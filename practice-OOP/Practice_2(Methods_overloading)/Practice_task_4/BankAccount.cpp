@@ -32,8 +32,7 @@ void BankAccount::setBalance(const int balance)
 	this->balance = balance;
 }
 
-void BankAccount::setDepositInterest(const 
-							int deposInterest)
+void BankAccount::setDepositInterest(const int deposInterest)
 {
 	this->depositInterest = deposInterest;
 }
@@ -46,8 +45,7 @@ int BankAccount::annualIncome() const
 }
 
 //Перевантаження оператора(=)
-BankAccount* BankAccount::operator=(const
-							BankAccount& bankAcc)
+BankAccount* BankAccount::operator=(const BankAccount& bankAcc)
 {
 
 	this->balance = bankAcc.balance;
@@ -57,8 +55,7 @@ BankAccount* BankAccount::operator=(const
 }
 
 //Перевантаження оператора(+)
-BankAccount BankAccount::operator+(const 
-					BankAccount& bankAcc)
+BankAccount BankAccount::operator+(const BankAccount& bankAcc)
 {
 	BankAccount tempAcc;
 	tempAcc.balance = this->balance + bankAcc.balance;
@@ -69,8 +66,7 @@ BankAccount BankAccount::operator+(const
 }
 
 //Перевантаження оператора("()")
-void BankAccount::operator()(const int  balance,
-					const int depositInterest)
+void BankAccount::operator()(const int  balance, const int depositInterest)
 {
 	if (balance * depositInterest / 100 >
 		this->balance * this->depositInterest / 100) {
