@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -9,17 +9,17 @@ using namespace std;
 class Doctor
 {
 private:
-	//Ім'я пацієнта 
+	//Р†Рј'СЏ РїР°С†С–С”РЅС‚Р° 
 	string namePatient;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Doctor(const string& namePatient = "");
 
-	//Перевірка пацієнта
+	//РџРµСЂРµРІС–СЂРєР° РїР°С†С–С”РЅС‚Р°
 	bool hasPatient() const;
 
-	//Перевантаження операторів
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ
 	friend ostream& operator<<(ostream& out, const Doctor& doc);
 	friend istream& operator>>(istream& in, Doctor& doc);
 	void operator--(int);
