@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -13,29 +13,29 @@ private:
 
 public:
 
-	//Êîíñòðóêòîð çà çàìîâ÷óâàííÿì
+	//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð·Ð° Ð·Ð°Ð¼Ð¾Ð²Ñ‡ÑƒÐ²Ð°Ð½Ð½ÑÐ¼
 	MyString();
 
-	//Êîíñòðóêòîð ç ïàðàìåòðîì
+	//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼
 	MyString(const char* initString);
 	
-	//Êîíñòðóêòîð êîï³þâàííÿ
+	//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ ÐºÐ¾Ð¿Ñ–ÑŽÐ²Ð°Ð½Ð½Ñ
 	MyString(const MyString& myStr);
 
-	//Äåñòðóêòîð
+	//Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€
 	~MyString();
 
-	//Ãðóïà "ãåòåð³â"
+	//Ð“Ñ€ÑƒÐ¿Ð° "Ð³ÐµÑ‚ÐµÑ€Ñ–Ð²"
 	char* getString() const;
 	int getLength() const;
 
-	//Ìåòîä äðóêó ðÿäêó
+	//ÐœÐµÑ‚Ð¾Ð´ Ð´Ñ€ÑƒÐºÑƒ Ñ€ÑÐ´ÐºÑƒ
 	void copy(const char* str);
 
-	//Ïåðåâàíòàæåííÿ îïåðàòîðà(=)
+	//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð°(=)
 	MyString& operator=(const MyString& myStr);
 
-	//Ïåðåâàíòàæåííÿ îïåðàòîð³â ÷åðåç äðóæí³ ôóíêö³¿
+	//ÐŸÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð½Ñ Ð¾Ð¿ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ñ–Ð² Ñ‡ÐµÑ€ÐµÐ· Ð´Ñ€ÑƒÐ¶Ð½Ñ– Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ—
 	friend istream& operator>>(istream& in, MyString& myStr);
 	friend ostream& operator<<(ostream& out, const MyString& myStr);
 	friend MyString operator+(const MyString& myStrFirst,
