@@ -1,26 +1,26 @@
-#include "Doctor.h"
+п»ї#include "Doctor.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Doctor::Doctor(const string& namePatient)
 {
     this->namePatient = namePatient;
 }
 
-//Метод перевірки наявності пацієнта
+//РњРµС‚РѕРґ РїРµСЂРµРІС–СЂРєРё РЅР°СЏРІРЅРѕСЃС‚С– РїР°С†С–С”РЅС‚Р°
 bool Doctor::hasPatient() const
 {
     return (namePatient != "");
 }
 
-//Перевантаження оператора(<<)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<<)
 ostream& operator<<(ostream& out, const Doctor& doc)
 {
-    out << "Ім'я пацієнта: " << doc.namePatient;
+    out << "Р†Рј'СЏ РїР°С†С–С”РЅС‚Р°: " << doc.namePatient;
 
     return out;
 }
 
-//Перевантаження оператора(>>)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>>)
 istream& operator>>(istream& in, Doctor& doc)
 {
     if (!doc.hasPatient()) {
@@ -29,13 +29,13 @@ istream& operator>>(istream& in, Doctor& doc)
     }
     else {
 
-        cout << "Пацієнт вже наявний!" << endl;
+        cout << "РџР°С†С–С”РЅС‚ РІР¶Рµ РЅР°СЏРІРЅРёР№!" << endl;
     }
 
     return in;
 }
 
-//Перевантаження постфіксного декримента
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РїРѕСЃС‚С„С–РєСЃРЅРѕРіРѕ РґРµРєСЂРёРјРµРЅС‚Р°
 void Doctor::operator--(int)
 {
     this->namePatient = "";
