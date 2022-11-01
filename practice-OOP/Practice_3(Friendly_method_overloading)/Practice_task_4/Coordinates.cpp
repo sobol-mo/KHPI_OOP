@@ -1,6 +1,6 @@
-#include "Coordinates.h"
+п»ї#include "Coordinates.h"
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Coordinates::Coordinates(const int x, const int y, const int z)
 {
 	this->x = x;
@@ -8,7 +8,7 @@ Coordinates::Coordinates(const int x, const int y, const int z)
 	this->z = z;
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Coordinates::Coordinates(const Coordinates& coord)
 {
 	this->x = coord.x;
@@ -16,7 +16,7 @@ Coordinates::Coordinates(const Coordinates& coord)
 	this->z = coord.z;
 }
 
-//Перевантаження оператора(=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 Coordinates& Coordinates::operator=(const Coordinates& coord)
 {
 	this->x = coord.x;
@@ -26,7 +26,7 @@ Coordinates& Coordinates::operator=(const Coordinates& coord)
 	return *this;
 }
 
-//Перевантаження оператора(++)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(++)
 Coordinates& Coordinates::operator++(int)
 {
 	this->x++;
@@ -36,7 +36,7 @@ Coordinates& Coordinates::operator++(int)
 	return *this;
 }
 
-//Перевантаження оператора(--)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(--)
 Coordinates& Coordinates::operator--()
 {
 	this->x--;
@@ -46,7 +46,7 @@ Coordinates& Coordinates::operator--()
 	return *this;
 }
 
-//Перевантаження оператора(+)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(+)
 Coordinates operator+(const Coordinates& firstCoord, const Coordinates& secondCoord)
 {
 	Coordinates tempCoord;
@@ -57,7 +57,7 @@ Coordinates operator+(const Coordinates& firstCoord, const Coordinates& secondCo
 	return tempCoord;
 }
 
-//Перевантаження оператора(-)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(-)
 Coordinates operator-(const Coordinates& firstCoord, const Coordinates& secondCoord)
 {
 	Coordinates tempCoord;
@@ -68,7 +68,7 @@ Coordinates operator-(const Coordinates& firstCoord, const Coordinates& secondCo
 	return tempCoord;
 }
 
-//Перевантаження оператора(*)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(*)
 Coordinates operator*(const Coordinates& coord, const int number)
 {
 	Coordinates tempCoord;
@@ -79,7 +79,7 @@ Coordinates operator*(const Coordinates& coord, const int number)
 	return tempCoord;
 }
 
-//Перевантаження оператора(<<)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<<)
 ostream& operator<<(ostream& out, const Coordinates& coord)
 {
 	out << "(" << coord.x << ", " << coord.y << ", " << coord.z << ")";
@@ -87,7 +87,7 @@ ostream& operator<<(ostream& out, const Coordinates& coord)
 	return out;
 }
 
-//Перевантаження оператора(>>)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>>)
 istream& operator>>(istream& in, Coordinates& coord)
 {
 	in >> coord.x >> coord.y >> coord.z;
