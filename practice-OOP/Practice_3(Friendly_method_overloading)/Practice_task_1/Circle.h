@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -13,25 +13,25 @@ private:
 	int radius;
 
 public:
-	//Конструктор з параметром
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 	Circle(const int radius = 1);
 	
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Circle(const Circle& circle);
 
-	//Гетер 
+	//Р“РµС‚РµСЂ 
 	int getRadius() const;
 
-	//Функція підрахунку площі
+	//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РїР»РѕС‰С–
 	double areaCalc() const;
 
-	//Функція підрахунку довжини окружності
+	//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РґРѕРІР¶РёРЅРё РѕРєСЂСѓР¶РЅРѕСЃС‚С–
 	double circumferenceCalc() const;
 
-	//Перевантаження оператора(=)
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 	Circle& operator=(const Circle& circle);
 
-	//Перевантаження операторів через дружні функції
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂС–РІ С‡РµСЂРµР· РґСЂСѓР¶РЅС– С„СѓРЅРєС†С–С—
 	friend Circle operator+(const Circle& circle, const int value);
 	friend ostream& operator<<(ostream& out, const Circle& circle);
 	friend istream& operator>>(istream& in, Circle& circle);
