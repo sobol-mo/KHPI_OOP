@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <Windows.h>
@@ -13,19 +13,19 @@ private:
 	int z;
 
 public:
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Coordinates(const int x = 0,const int y = 0,const int z = 0);
 
-	//Конструктор копіювання
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 	Coordinates(const Coordinates& coord);
 
 	//coord - coordinate
-	//Перевантаження через методи
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ С‡РµСЂРµР· РјРµС‚РѕРґРё
 	Coordinates& operator=(const Coordinates& coord);
 	Coordinates& operator++(int);
 	Coordinates& operator--();
 
-	//Перевантаження через дружні функції
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ С‡РµСЂРµР· РґСЂСѓР¶РЅС– С„СѓРЅРєС†С–С—
 	friend Coordinates operator+(const Coordinates& firstCoord,
 		const Coordinates& secondCoord);
 
