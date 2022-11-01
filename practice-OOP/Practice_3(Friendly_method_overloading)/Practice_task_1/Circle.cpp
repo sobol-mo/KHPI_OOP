@@ -1,36 +1,36 @@
-#include "Circle.h"
+п»ї#include "Circle.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Circle::Circle(const int radius)
 {
 	this->radius = radius;
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 Circle::Circle(const Circle& circle)
 {
 	this->radius = circle.radius;
 }
 
-//Гетер поля класу
+//Р“РµС‚РµСЂ РїРѕР»СЏ РєР»Р°СЃСѓ
 int Circle::getRadius() const
 {
 	return this->radius;
 }
 
-//Функція підрахунку площі
+//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РїР»РѕС‰С–
 double Circle::areaCalc() const
 {
 	return PI * radius * radius;
 }
 
-//Функція підрахунку довжини окружності
+//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РґРѕРІР¶РёРЅРё РѕРєСЂСѓР¶РЅРѕСЃС‚С–
 double Circle::circumferenceCalc() const
 {
 	return 2 * PI * radius;
 }
 
-//Перевантаження оператора(=) 
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=) 
 Circle& Circle::operator=(const Circle& circle)
 {
 	this->radius = circle.radius;
@@ -38,13 +38,13 @@ Circle& Circle::operator=(const Circle& circle)
 	return *this;
 }
 
-//Перевантаження оператора(+) 
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(+) 
 Circle operator+(const Circle& circle, const int value)
 {
 	return Circle(circle.radius + value);
 }
 
-//Перевантаження оператора(<<) 
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<<) 
 ostream& operator<<(ostream& out, const Circle& circle)
 {
 	out << circle.radius;
@@ -52,7 +52,7 @@ ostream& operator<<(ostream& out, const Circle& circle)
 	return out;
 }
 
-//Перевантаження оператора(>>) 
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>>) 
 istream& operator>>(istream& in, Circle& circle)
 {
 	in >> circle.radius;
