@@ -1,7 +1,7 @@
-#include "MyString.h"
+п»ї#include "MyString.h"
 
 
-//Метод копіювання рядка
+//РњРµС‚РѕРґ РєРѕРїС–СЋРІР°РЅРЅСЏ СЂСЏРґРєР°
 void MyString::copy(const char* str)
 {
 	if(length != 0)
@@ -19,31 +19,31 @@ void MyString::copy(const char* str)
 	*(string + length) = '\0';
 }
 
-//Конструктор за замовчуванням
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р·Р° Р·Р°РјРѕРІС‡СѓРІР°РЅРЅСЏРј
 MyString::MyString()
 {
-	this->copy("Рядок");
+	this->copy("Р СЏРґРѕРє");
 }
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 MyString::MyString(const char* initString)
 {
 	copy(initString);
 }
 
-//Конструктор копіювання
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїС–СЋРІР°РЅРЅСЏ
 MyString::MyString(const MyString& myStr)
 {
 	copy(myStr.string);
 }
 
-//Деструктор
+//Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 MyString::~MyString()
 {
 	delete[] string;
 }
 
-//Група "гетерів"
+//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
 char* MyString::getString() const
 {
 	return string;
@@ -54,7 +54,7 @@ int MyString::getLength() const
 	return length;
 }
 
-//Перевантаження оператора(=)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(=)
 MyString& MyString::operator=(const MyString& myStr)
 {
 	this->copy(myStr.string);
@@ -62,7 +62,7 @@ MyString& MyString::operator=(const MyString& myStr)
 	return *this;
 }
 
-//Перевантаження оператора(>>)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(>>)
 istream& operator>>(istream& in, MyString& myStr)
 {
 	char buffer[1001]{};
@@ -72,7 +72,7 @@ istream& operator>>(istream& in, MyString& myStr)
 	return in;
 }
 
-//Перевантаження оператора(<<)
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(<<)
 ostream& operator<<(ostream& out, const MyString& myStr)
 {
 	cout << myStr.string;
@@ -80,8 +80,8 @@ ostream& operator<<(ostream& out, const MyString& myStr)
 	return out;
 }
 
-//Перевантаження оператора(+)
-//Конкатенація рядків
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С‚РѕСЂР°(+)
+//РљРѕРЅРєР°С‚РµРЅР°С†С–СЏ СЂСЏРґРєС–РІ
 MyString operator+(const MyString& myStrFirst, const MyString& myStrSecond)
 {
 	char buffer[1001]{};
