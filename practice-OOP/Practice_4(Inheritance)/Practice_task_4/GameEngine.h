@@ -9,13 +9,13 @@ private:
 	int numberOfPoints;
 
 	//Функція друку результату
-	void printResult();
+	void printResult() const;
 
 protected:
 
 	//Функція-валідатор для перевірки виходу
 	//персонажа за межі поля, або зіткнення з 0 
-	bool validatePosition(const int posX, const int posY);
+	bool validatePosition(const int posX, const int posY) const;
 
 	//Функція зупинки гри
 	void stopGame();
