@@ -7,14 +7,14 @@ GameEngine::GameEngine()
 }
 
 //Функція друку результату
-void GameEngine::printResult()
+void GameEngine::printResult() const
 {
 	cout << "Результат: " << numberOfPoints << endl;
 }
 
 //Функція-валідатор для перевірки виходу
 //персонажа за межі поля, або зіткнення з 0 
-bool GameEngine::validatePosition(const int x, const int y)
+bool GameEngine::validatePosition(const int x, const int y) const
 {
 	return x >= 0 && y >= 0 &&
 		x < SIZE_FIELD && y < SIZE_FIELD &&
@@ -25,8 +25,8 @@ bool GameEngine::validatePosition(const int x, const int y)
 void GameEngine::nextStep(const int newX, const int newY)
 {
 	field[newX][newY] = '#';
-	xPosition = newX;
-	yPosition = newY;
+	this->xPosition = newX;
+	this->yPosition = newY;
 	numberOfPoints++;
 }
 
@@ -35,7 +35,7 @@ void GameEngine::stopGame()
 {
 	printResult();
 	characterUpdate();
-	numberOfPoints = 0;
+	this->numberOfPoints = 0;
 }
 
 //Функції для переміщення персонажа
