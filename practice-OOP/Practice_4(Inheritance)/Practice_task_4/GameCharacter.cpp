@@ -12,7 +12,7 @@ GameCharacter::GameCharacter()
 //розташуванням персонажа
 void GameCharacter::characterUpdate()
 {
-	this->fieldUpdate();
+	fieldUpdate();
 	this->xPosition = rand() % SIZE_FIELD;
 	this->yPosition = rand() % SIZE_FIELD;
 	field[xPosition][yPosition] = '#';
