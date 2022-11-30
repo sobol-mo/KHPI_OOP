@@ -7,7 +7,7 @@ void PlayingField::fieldUpdate()
 	{
 		for (int j = 0; j < SIZE_FIELD; j++)
 		{
-			field[i][j] = '*';
+			this->field[i][j] = '*';
 		}
 	}
 }
