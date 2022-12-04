@@ -21,4 +21,3 @@ public:
 	//Гетер для поля 
 	int getNumber() const;
 };
-
