@@ -1,8 +1,8 @@
 ﻿#pragma once
 
-#include "Warehouse.h"
+#include "WarehouseInfo.h"
 
-class Information : public Warehouse
+class Information : public WarehouseInfo
 {
 public:
 

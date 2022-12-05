@@ -1,25 +1,25 @@
-﻿#include "Warehouse.h"
+﻿#include "WarehouseInfo.h"
 
 //Конструктор з параметром
-Warehouse::Warehouse(const int count)
+WarehouseInfo::WarehouseInfo(const int count)
 {
 	this->count = (count >= 0 ? count : 1);
 	this->fullPrice = count * getPrice();
 }
 
 //Сетер кількості іграшок
-void Warehouse::setCount(const int count)
+void WarehouseInfo::setCount(const int count)
 {
 	this->count = (count >= 0 ? count : 1);
 }
 
 //Група "гетерів"
-int Warehouse::getCount() const
+int WarehouseInfo::getCount() const
 {
 	return count;
 }
 
-int Warehouse::getFullPrice()
+int WarehouseInfo::getFullPrice()
 {
 	this->fullPrice = count * getPrice();
 	return fullPrice;

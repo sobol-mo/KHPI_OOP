@@ -2,7 +2,7 @@
 
 #include "Toy.h"
 
-class Warehouse : public Toy
+class WarehouseInfo : public Toy
 {
 private:
 
@@ -15,7 +15,7 @@ private:
 public:
 
 	//Конструктор з параметром
-	Warehouse(const int count = 0);
+	WarehouseInfo(const int count = 0);
 
 	//Сетер кількості іграшок
 	void setCount(const int count);
