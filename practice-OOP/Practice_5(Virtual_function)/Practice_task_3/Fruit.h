@@ -18,7 +18,7 @@ protected:
 public:
 
 	//Конструктор з параметром
-	Fruit(const string& variery, const int price);
+	Fruit(const string& variety, const int price);
 
 	//Функції доступу до поля
 	int getPrice() const;
