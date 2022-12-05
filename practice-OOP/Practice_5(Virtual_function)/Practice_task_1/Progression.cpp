@@ -1,4 +1,4 @@
-#include "Progression.h"
+﻿#include "Progression.h"
 
 Progression::Progression(const int step, const int firstElement)
 {

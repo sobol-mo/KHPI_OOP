@@ -1,33 +1,33 @@
-#pragma once
+п»ї#pragma once
 
 
 class Progression
 {
 protected:
 
-	//Перший елемент прогресії
+	//РџРµСЂС€РёР№ РµР»РµРјРµРЅС‚ РїСЂРѕРіСЂРµСЃС–С—
 	int firstElement;
 
-	//Шаг прогресії
+	//РЁР°Рі РїСЂРѕРіСЂРµСЃС–С—
 	int step;
 	
 public:
 
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Progression(const int step = 0,
 		const int firstElement = 0);
 
-	//Група "гетерів"
+	//Р“СЂСѓРїР° "РіРµС‚РµСЂС–РІ"
 	int getFirstElement() const;
 	int getStep() const ;
 
-	//Група "сетерів"
+	//Р“СЂСѓРїР° "СЃРµС‚РµСЂС–РІ"
 	void setFirstElement(const int firstEl);
 	void setStep(const int step);
 
-	//Чиста віртуальна функція розрахунку елементу прогресії
+	//Р§РёСЃС‚Р° РІС–СЂС‚СѓР°Р»СЊРЅР° С„СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РµР»РµРјРµРЅС‚Сѓ РїСЂРѕРіСЂРµСЃС–С—
 	virtual int getElement(const int elemNumber) = 0;
 
-	//Чиста віртуальна функція розрахунку суми прогресії
+	//Р§РёСЃС‚Р° РІС–СЂС‚СѓР°Р»СЊРЅР° С„СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃСѓРјРё РїСЂРѕРіСЂРµСЃС–С—
 	virtual int getSum(const int elemNumber) = 0;
 };

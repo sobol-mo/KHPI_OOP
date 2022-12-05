@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "Progression.h"
 
@@ -6,9 +6,9 @@ class ArithmeticProgression : public Progression
 {
 public:
 
-	//Функція розрахунку елементку арифметичної прогресії
+	//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РµР»РµРјРµРЅС‚РєСѓ Р°СЂРёС„РјРµС‚РёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С—
 	virtual int getElement(const int elemNumber) override;
 
-	//Функція розрахунку суми арифметичної прогресії 
+	//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃСѓРјРё Р°СЂРёС„РјРµС‚РёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С— 
 	virtual int getSum(const int elemNumber) override;
 };

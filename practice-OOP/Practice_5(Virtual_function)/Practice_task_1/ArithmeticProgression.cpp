@@ -1,12 +1,12 @@
-#include "ArithmeticProgression.h"
+п»ї#include "ArithmeticProgression.h"
 
-//Функція розрахунку елементку арифметичної прогресії
+//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РµР»РµРјРµРЅС‚РєСѓ Р°СЂРёС„РјРµС‚РёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С—
 int ArithmeticProgression::getElement(const int elemNumber)
 {
     return firstElement + step * (elemNumber - 1);
 }
 
-//Функція розрахунку суми арифметичної прогресії
+//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃСѓРјРё Р°СЂРёС„РјРµС‚РёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С—
 int ArithmeticProgression::getSum(const int elemNumber)
 {
     return (firstElement + getElement(elemNumber)) * elemNumber / 2;

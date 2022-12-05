@@ -1,6 +1,6 @@
-#include "GeometricProgression.h"
+п»ї#include "GeometricProgression.h"
 
-//Функція розрахунку елементку геометричної прогресії
+//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ РµР»РµРјРµРЅС‚РєСѓ РіРµРѕРјРµС‚СЂРёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С—
 int GeometricProgression::getElement(const int elemNumber)
 {
 	int tempElement = 1;
@@ -13,7 +13,7 @@ int GeometricProgression::getElement(const int elemNumber)
 	return firstElement * tempElement;
 }
 
-//Функція розрахунку суми геометричної прогресії 
+//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ СЃСѓРјРё РіРµРѕРјРµС‚СЂРёС‡РЅРѕС— РїСЂРѕРіСЂРµСЃС–С— 
 int GeometricProgression::getSum(const int elemNumber)
 {
 	if (step != 1) {
