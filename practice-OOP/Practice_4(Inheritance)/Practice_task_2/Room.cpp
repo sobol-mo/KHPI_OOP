@@ -1,9 +1,9 @@
 ﻿#include "Room.h"
 
 //Конструктор з параметрами
-Room::Room(const int rLong, const int rWidth,
+Room::Room(const int rLength, const int rWidth,
 	const int rHeight) :
-	Figure(rLong, rWidth), CostSquareMeter(0)
+	Figure(rLength, rWidth), CostSquareMeter(0)
 {
 	this->height = rHeight;
 }
@@ -11,7 +11,7 @@ Room::Room(const int rLong, const int rWidth,
 //Функція підрахунку площі 
 int Room::getSquare() const
 {
-	return this->getLong() * this->getWidth();
+	return this->getLength() * this->getWidth();
 }
 
 //Функція підрахунку ціни площі

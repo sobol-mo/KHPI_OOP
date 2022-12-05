@@ -5,21 +5,21 @@ class Figure
 private:
 
 	//Розміри фігури
-	int figureLong;
+	int figureLength;
 	int figureWidth;
 
 public:
 
 	//Конструктор з параметрами
-	Figure(const int fLong = 0,
+	Figure(const int fLength = 0,
 		const int fWidth = 0);
 
 	//Група "гетерів"
-	int getLong() const;
+	int getLength() const;
 	int getWidth() const;
 
 	//Група "сетерів"
-	void setLong(const int fLong);
+	void setLength(const int fLength);
 	void setWidth(const int fWidth);
 
 };

@@ -1,16 +1,16 @@
 ﻿#include "Figure.h"
 
 //Конструктор з параметрами
-Figure::Figure(const int fLong, const int fWidth)
+Figure::Figure(const int fLength, const int fWidth)
 {
-    this->figureLong = fLong;
+    this->figureLength = fLength;
     this->figureWidth = fWidth;
 }
 
 //Група "гетерів"
-int Figure::getLong() const
+int Figure::getLength() const
 {
-    return figureLong;
+    return figureLength;
 }
 
 int Figure::getWidth() const
@@ -19,9 +19,9 @@ int Figure::getWidth() const
 }
 
 //Група "сетерів"
-void Figure::setLong(const int fLong)
+void Figure::setLength(const int fLength)
 {
-    this->figureLong = fLong;
+    this->figureLength = fLength;
 }
 
 void Figure::setWidth(const int fWidth)

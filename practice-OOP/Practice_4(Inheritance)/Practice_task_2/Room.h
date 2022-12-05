@@ -17,7 +17,7 @@ private:
 public:
 
 	//Конструктор з параметрами
-	Room(const int rLong = 1, const int rWidth = 1,
+	Room(const int rLength = 1, const int rWidth = 1,
 		const int rHeight = 2);
 
 	//Функція підрахунку площі 
