@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <string>
 #include <iostream>
@@ -9,24 +9,24 @@ class Fruit
 {
 protected:
 
-	//Сорт фрукту
+	//РЎРѕСЂС‚ С„СЂСѓРєС‚Сѓ
 	string variety;
 
-	//Ціна
+	//Р¦С–РЅР°
 	int price;
 
 public:
 
-	//Конструктор з параметром
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 	Fruit(const string& variery, const int price);
 
-	//Функції доступу до поля
+	//Р¤СѓРЅРєС†С–С— РґРѕСЃС‚СѓРїСѓ РґРѕ РїРѕР»СЏ
 	int getPrice() const;
 	void setPrice(const int price);
 
-	//Перевантаження операції потокового виводу
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С†С–С— РїРѕС‚РѕРєРѕРІРѕРіРѕ РІРёРІРѕРґСѓ
 	friend ostream& operator<<(ostream& out,const Fruit& fruit);
 	
-	//Чиста віртуальна функція друку інформації
+	//Р§РёСЃС‚Р° РІС–СЂС‚СѓР°Р»СЊРЅР° С„СѓРЅРєС†С–СЏ РґСЂСѓРєСѓ С–РЅС„РѕСЂРјР°С†С–С—
 	virtual void printInfo() const = 0;
 };

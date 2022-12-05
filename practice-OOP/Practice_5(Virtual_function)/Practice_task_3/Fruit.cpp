@@ -1,13 +1,13 @@
-#include "Fruit.h"
+п»ї#include "Fruit.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Fruit::Fruit(const string& variery, const int price)
 {
 	this->variety = variery;
 	this->price = price;
 }
 
-//Функції доступу до поля
+//Р¤СѓРЅРєС†С–С— РґРѕСЃС‚СѓРїСѓ РґРѕ РїРѕР»СЏ
 int Fruit::getPrice() const
 {
 	return this->price;
@@ -18,7 +18,7 @@ void Fruit::setPrice(const int price)
 	this->price = price;
 }
 
-//Перевантаження операції потокового виводу
+//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅРЅСЏ РѕРїРµСЂР°С†С–С— РїРѕС‚РѕРєРѕРІРѕРіРѕ РІРёРІРѕРґСѓ
 ostream& operator<<(ostream& out,const Fruit& fruit)
 {
 	fruit.printInfo();

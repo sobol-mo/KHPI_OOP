@@ -1,14 +1,14 @@
-#include "Apple.h"
+п»ї#include "Apple.h"
 
-//Конструктор з параметроми
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРјРё
 Apple::Apple(const string& variety, const int price):
 	Fruit(variety, price)
 {
 }
 
-//Перевизначення віртуальної функції друку інформації
+//РџРµСЂРµРІРёР·РЅР°С‡РµРЅРЅСЏ РІС–СЂС‚СѓР°Р»СЊРЅРѕС— С„СѓРЅРєС†С–С— РґСЂСѓРєСѓ С–РЅС„РѕСЂРјР°С†С–С—
 void Apple::printInfo() const
 {
-	cout << "Яблуко сорту: " << variety << endl;
-	cout << "Ціна: " << price << endl;
+	cout << "РЇР±Р»СѓРєРѕ СЃРѕСЂС‚Сѓ: " << variety << endl;
+	cout << "Р¦С–РЅР°: " << price << endl;
 }

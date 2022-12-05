@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "Fruit.h"
 
@@ -6,9 +6,9 @@ class Apple : public Fruit
 {
 public:
 
-	//Конструктор з параметроми
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРјРё
 	Apple(const string& variety, const int price);
 
-	//Перевизначення віртуальної функції друку інформації
+	//РџРµСЂРµРІРёР·РЅР°С‡РµРЅРЅСЏ РІС–СЂС‚СѓР°Р»СЊРЅРѕС— С„СѓРЅРєС†С–С— РґСЂСѓРєСѓ С–РЅС„РѕСЂРјР°С†С–С—
 	virtual void printInfo() const override;
 };

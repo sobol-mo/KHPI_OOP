@@ -1,14 +1,14 @@
-#include "Banana.h"
+п»ї#include "Banana.h"
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Banana::Banana(const string& variety, const int price) :
 	Fruit(variety, price)
 {
 }
 
-//Перевизначення віртуальної функції друку інформації
+//РџРµСЂРµРІРёР·РЅР°С‡РµРЅРЅСЏ РІС–СЂС‚СѓР°Р»СЊРЅРѕС— С„СѓРЅРєС†С–С— РґСЂСѓРєСѓ С–РЅС„РѕСЂРјР°С†С–С—
 void Banana::printInfo() const
 {
-	cout << "Банан сорту: " << variety << endl;
-	cout << "Ціна: " << price << endl;
+	cout << "Р‘Р°РЅР°РЅ СЃРѕСЂС‚Сѓ: " << variety << endl;
+	cout << "Р¦С–РЅР°: " << price << endl;
 }
