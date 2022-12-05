@@ -1,24 +1,24 @@
-#include "Square.h"
+п»ї#include "Square.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Square::Square(const double diameter) :
 	Figure(diameter)
 {
 }
 
-//Реалізація функції пошуку площі
+//Р РµР°Р»С–Р·Р°С†С–СЏ С„СѓРЅРєС†С–С— РїРѕС€СѓРєСѓ РїР»РѕС‰С–
 double Square::getArea() const
 {
 	return pow(this->getSide(), 2);
 }
 
-//Реалізація функції пошуку периметру
+//Р РµР°Р»С–Р·Р°С†С–СЏ С„СѓРЅРєС†С–С— РїРѕС€СѓРєСѓ РїРµСЂРёРјРµС‚СЂСѓ
 double Square::getPerimeter() const
 {
 	return this->getSide() * 4;
 }
 
-//Функція підрахунку сторони квадарата
+//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ СЃС‚РѕСЂРѕРЅРё РєРІР°РґР°СЂР°С‚Р°
 double Square::getSide() const
 {
 	return diameter / sqrt(2);

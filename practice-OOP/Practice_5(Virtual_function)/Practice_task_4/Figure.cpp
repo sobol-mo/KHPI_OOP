@@ -1,12 +1,12 @@
-#include "Figure.h"
+ï»¿#include "Figure.h"
 
-//Êîíñòðóêòîð ç ïàðàìåòðîì
+//ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð· Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼
 Figure::Figure(const double diameter)
 {
     this->diameter = (diameter >= 0 ? diameter : 0);
 }
 
-//Ãðóïà ôóíêö³¿ äîñòóïó äî ïîë³â
+//Ð“Ñ€ÑƒÐ¿Ð° Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ— Ð´Ð¾ÑÑ‚ÑƒÐ¿Ñƒ Ð´Ð¾ Ð¿Ð¾Ð»Ñ–Ð²
 void Figure::setDiameter(const double diameter)
 {
     this->diameter = (diameter >= 0 ? diameter : 0);

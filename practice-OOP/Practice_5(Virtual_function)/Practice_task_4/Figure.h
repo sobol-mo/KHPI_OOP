@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <math.h>
 using namespace std;
@@ -7,22 +7,22 @@ class Figure
 {
 protected:
 
-	//Діаметр
+	//Р”С–Р°РјРµС‚СЂ
 	double diameter;
 
 public:
 
-	//Конструктор з параметром
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 	Figure(const double diameter = 1);
 
-	//Група функції доступу до полів
+	//Р“СЂСѓРїР° С„СѓРЅРєС†С–С— РґРѕСЃС‚СѓРїСѓ РґРѕ РїРѕР»С–РІ
 	void setDiameter(const double diameter);
 	double getDiameter() const;
 
-	//Чиста віртуальная функція підрахунку площі
+	//Р§РёСЃС‚Р° РІС–СЂС‚СѓР°Р»СЊРЅР°СЏ С„СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ РїР»РѕС‰С–
 	virtual double getArea() const = 0;
 
-	//Чиста віртуальна функція підраухнку периметру
+	//Р§РёСЃС‚Р° РІС–СЂС‚СѓР°Р»СЊРЅР° С„СѓРЅРєС†С–СЏ РїС–РґСЂР°СѓС…РЅРєСѓ РїРµСЂРёРјРµС‚СЂСѓ
 	virtual double getPerimeter() const = 0;
 
 };

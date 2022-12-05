@@ -1,24 +1,24 @@
-#include "Circle.h"
+п»ї#include "Circle.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Circle::Circle(const double diameter) :
 	Figure(diameter)
 {
 }
 
-//Реалізація функції пошуку площі
+//Р РµР°Р»С–Р·Р°С†С–СЏ С„СѓРЅРєС†С–С— РїРѕС€СѓРєСѓ РїР»РѕС‰С–
 double Circle::getArea() const
 {
 	return PI * pow(this->getRadius() , 2) ;
 }
 
-//Реалізація функції пошуку периметру
+//Р РµР°Р»С–Р·Р°С†С–СЏ С„СѓРЅРєС†С–С— РїРѕС€СѓРєСѓ РїРµСЂРёРјРµС‚СЂСѓ
 double Circle::getPerimeter() const
 {
 	return PI * this->getRadius() * 2;
 }
 
-//Функція підрахунку радіусу
+//Р¤СѓРЅРєС†С–СЏ РїС–РґСЂР°С…СѓРЅРєСѓ СЂР°РґС–СѓСЃСѓ
 double Circle::getRadius() const
 {
 	return diameter / 2;
