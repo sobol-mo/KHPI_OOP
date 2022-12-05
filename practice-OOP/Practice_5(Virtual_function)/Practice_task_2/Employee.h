@@ -23,7 +23,7 @@ public:
 	//Гетер для ім'я
 	string getName() const;
 
-	//Функція для посади
+	//Гетер для посади
 	string getPosition() const;
 
 	//Функція розрахунку заробітної плати
