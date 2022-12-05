@@ -1,9 +1,9 @@
 ﻿#include "Fruit.h"
 
 //Конструктор з параметром
-Fruit::Fruit(const string& variery, const int price)
+Fruit::Fruit(const string& variety, const int price)
 {
-	this->variety = variery;
+	this->variety = variety;
 	this->price = price;
 }
 
