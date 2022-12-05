@@ -8,7 +8,7 @@ protected:
 	//Перший елемент прогресії
 	int firstElement;
 
-	//Шаг прогресії
+	//Крок прогресії
 	int step;
 	
 public:
