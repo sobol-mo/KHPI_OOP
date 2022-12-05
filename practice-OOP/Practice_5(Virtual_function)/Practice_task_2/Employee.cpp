@@ -1,25 +1,25 @@
-#include "Employee.h"
+п»ї#include "Employee.h"
 
-//Конструктор з параметром
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 Employee::Employee(const string& name, const string& position) {
 
 	this->name = name;
 	this->position = position;
 }
 
-//Гетер для ім'я
+//Р“РµС‚РµСЂ РґР»СЏ С–Рј'СЏ
 string Employee::getName() const
 {
 	return this->name;
 }
 
-//Гетер для посади
+//Р“РµС‚РµСЂ РґР»СЏ РїРѕСЃР°РґРё
 string Employee::getPosition() const
 {
 	return this->position;
 }
 
-//Функція розрахунку заробітної плати
+//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ Р·Р°СЂРѕР±С–С‚РЅРѕС— РїР»Р°С‚Рё
 int Employee::getSalary(const int income, const int numberOfEmployee) const
 {
 	return (income / numberOfEmployee - income / numberOfEmployee * 0.3);

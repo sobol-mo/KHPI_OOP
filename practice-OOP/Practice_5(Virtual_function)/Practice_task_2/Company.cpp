@@ -1,6 +1,6 @@
-#include "Company.h"
+п»ї#include "Company.h"
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Company::Company(Employee** team, const int teamSize, const int income)
 {
 	this->team = team;
@@ -8,14 +8,14 @@ Company::Company(Employee** team, const int teamSize, const int income)
 	this->income = income;
 }
 
-//Функція друку інформації про команду
+//Р¤СѓРЅРєС†С–СЏ РґСЂСѓРєСѓ С–РЅС„РѕСЂРјР°С†С–С— РїСЂРѕ РєРѕРјР°РЅРґСѓ
 void Company::printInfo() const
 {
 	for (int i = 0; i < teamSize; i++)
 	{
 		cout << team[i]->getPosition() <<
 			": " << team[i]->getName() <<
-			", заробітня плата: " << 
+			", Р·Р°СЂРѕР±С–С‚РЅСЏ РїР»Р°С‚Р°: " << 
 			team[i]->getSalary(this->income, this->teamSize) 
 			<< endl;
 	}

@@ -1,12 +1,12 @@
-#include "Manager.h"
+п»ї#include "Manager.h"
 
-//Конструктор з параметрами
+//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 Manager::Manager(const string& name, const string& position):
 	Employee(name, position)
 {
 }
 
-//Перевизначення функції розрахунку заробітної плати
+//РџРµСЂРµРІРёР·РЅР°С‡РµРЅРЅСЏ С„СѓРЅРєС†С–С— СЂРѕР·СЂР°С…СѓРЅРєСѓ Р·Р°СЂРѕР±С–С‚РЅРѕС— РїР»Р°С‚Рё
 int Manager::getSalary(const int income, const int numberOfEmployee) const
 {
 	return (income / numberOfEmployee);

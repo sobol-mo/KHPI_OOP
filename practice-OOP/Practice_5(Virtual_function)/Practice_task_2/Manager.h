@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "Employee.h"
 
@@ -6,9 +6,9 @@ class Manager : public Employee
 {
 public:
 
-	//Конструктор з параметрами
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂР°РјРё
 	Manager(const string& name, const string& position);
 
-	//Перевизначення функції розрахунку заробітної плати
+	//РџРµСЂРµРІРёР·РЅР°С‡РµРЅРЅСЏ С„СѓРЅРєС†С–С— СЂРѕР·СЂР°С…СѓРЅРєСѓ Р·Р°СЂРѕР±С–С‚РЅРѕС— РїР»Р°С‚Рё
 	virtual int getSalary(const int income, const int numberOfEmployee) const override;
 };

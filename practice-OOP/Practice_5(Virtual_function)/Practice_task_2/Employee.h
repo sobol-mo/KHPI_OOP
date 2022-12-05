@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <iostream>
 #include <string>
@@ -8,24 +8,24 @@ class Employee
 {
 protected:
 
-	//Ім'я
+	//Р†Рј'СЏ
 	string name;
 
-	//Посада
+	//РџРѕСЃР°РґР°
 	string position;
 
 public:
 
-	//Конструктор з параметром
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р· РїР°СЂР°РјРµС‚СЂРѕРј
 	Employee(const string& name,
 		const string& position);
 
-	//Гетер для ім'я
+	//Р“РµС‚РµСЂ РґР»СЏ С–Рј'СЏ
 	string getName() const;
 
-	//Функція для посади
+	//Р¤СѓРЅРєС†С–СЏ РґР»СЏ РїРѕСЃР°РґРё
 	string getPosition() const;
 
-	//Функція розрахунку заробітної плати
+	//Р¤СѓРЅРєС†С–СЏ СЂРѕР·СЂР°С…СѓРЅРєСѓ Р·Р°СЂРѕР±С–С‚РЅРѕС— РїР»Р°С‚Рё
 	virtual int getSalary(const int income, const int numberOfEmployee) const;
 };
