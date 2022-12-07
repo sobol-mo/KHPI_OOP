@@ -42,9 +42,9 @@ int main()
 	const int numberOfCars = 5;
 	Car carPark[numberOfCars] = { Car("BMW", 301.7, 42000),
 	                              Car("Audi", 295, 30000), 
-								  Car("Kia", 190, 23000),
-								  Car("Mazda", 223.6, 35000),
-								  Car("Honda", 201, 27000) };
+	                              Car("Kia", 190, 23000),
+	                              Car("Mazda", 223.6, 35000),
+	                              Car("Honda", 201, 27000) };
 
 	Car firstCar("Hyundai", 187.3, 25000);
 	Car secondCar("Ford", 360, 55000);
