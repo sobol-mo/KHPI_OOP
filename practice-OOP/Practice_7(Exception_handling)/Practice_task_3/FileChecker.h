@@ -7,7 +7,7 @@ class FileChecker
 {
 private:
 
-    //Символ, що шукають
+    //Шуканий символ
     char checkSymbol;
 
 public:
