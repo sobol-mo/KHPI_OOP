@@ -7,7 +7,7 @@ class Human
 {
 protected:
 
-	//Фамілія
+	//Прізвище
 	string surname;
 
 	//Вік
