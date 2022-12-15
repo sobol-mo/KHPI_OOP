@@ -28,7 +28,7 @@ public:
 	//Перевантаження оператора(->)
 	Type* operator->() const;
 
-	//Функція	
+	//Функція перевірки на порожнечу
 	bool isNull() const;
 };
 
@@ -46,7 +46,7 @@ SmartPointer<Type>::SmartPointer(SmartPointer& object)
 	//Передача управління поточному покажчику
 	this->ptr = object.ptr;
 
-	//Розриваємо зв'язок з об'єкта з попереднім покажчиком
+	//Розриваємо зв'язок об'єкта з попереднім покажчиком
 	object.ptr = nullptr;
 }
 
