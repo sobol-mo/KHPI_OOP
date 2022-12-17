@@ -4,7 +4,7 @@
 template Collection<GemstoneInfo>;
 
 //Конструктор за замовчуванням
-//Потрібен для створення об'єкту класу
+//Потрібен для створення об'єкта класу
 template<typename Type>
 Collection<Type>::Collection()
 {

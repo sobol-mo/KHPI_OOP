@@ -11,7 +11,7 @@ class Collection
 private:
 
 	//Контейнер multimap, ключ - ціна,
-	//Значення - об'єкт з довільним 
+	//значення - об'єкт з довільним 
 	//типом даних
 	multimap<int, Type> container;
 	
