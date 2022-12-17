@@ -16,7 +16,7 @@ bool BirthdayList::deleteByBirthday(const Date& birthday)
 	for (auto pMultiset = birthdayList.begin(); pMultiset != birthdayList.end(); pMultiset++)
 	{
 
-		//Якщо дати співпали, видаляємо
+		//Якщо дати збіглися, видаляємо
 		if (pMultiset->getBirthday() == birthday) {
 			birthdayList.erase(pMultiset);
 			flag = 1;

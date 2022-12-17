@@ -24,7 +24,7 @@ Person& Person::operator=(const Person& person)
 	return *this;
 }
 
-//Перевантаження оператора(>)
+//Перевантаження оператора(<)
 bool Person::operator<(const Person& person) const
 {
 	return this->birthday.getYear() < person.birthday.getYear();
