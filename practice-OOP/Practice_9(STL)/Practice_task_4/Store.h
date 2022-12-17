@@ -25,7 +25,7 @@ public:
 	//Функція видалення всіх товарів, які не наявні
 	void removeMissingItems();
 
-	//Функція видалення товарів у проміжку [fIndex ; sIndex)
+	//Функція видалення товарів у проміжку [fIndex , sIndex)
 	void removeItemsInBetween(const int fIndex, const int sIndex);
 
 	//Перевантаження оператора квадратних дужок 

@@ -11,7 +11,7 @@ void Store::printInfo() const
 {
 
 	if (storage.empty())
-		throw exception("Склад пустий!");
+		throw exception("Склад порожній!");
 
 	for (int i = 0; i < storage.size(); i++)
 	{
@@ -23,7 +23,7 @@ void Store::printInfo() const
 void Store::removeMissingItems()
 {
 	if (storage.empty())
-		throw exception("Склад пустий!");
+		throw exception("Склад порожній!");
 
 	storage_it removeIndex;
 
