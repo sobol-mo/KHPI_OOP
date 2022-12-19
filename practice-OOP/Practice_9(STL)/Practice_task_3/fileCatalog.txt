@@ -1,0 +1,5 @@
+binFile.bin 2000 0
+textFile.txt 2019 10
+tempFile.txt 2010 15
+infoFile.txt 2020 45
+gitIgnore.bin 2022 5
