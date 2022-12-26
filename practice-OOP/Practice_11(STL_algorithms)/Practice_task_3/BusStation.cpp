@@ -56,7 +56,7 @@ bool BusStation::equalDepartedArriving(BusStation& station)
 }
 
 //Функція пошуку схожих номерів автобусів, що їдуть/приїжджають
-vector<int> BusStation::getDepartedArrivingBuses(const BusStation& station)
+vector<int> BusStation::findDepartedArrivingBuses(const BusStation& station)
 {
 	vector<int> busNumbers;
 

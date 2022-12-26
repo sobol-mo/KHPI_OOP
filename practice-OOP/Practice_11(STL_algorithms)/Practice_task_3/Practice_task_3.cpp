@@ -82,7 +82,7 @@ int main()
 		secondStation.printInformation();
 		
 		vector<int> busNumbers = firstStation.
-			getDepartedArrivingBuses(secondStation);
+			findDepartedArrivingBuses(secondStation);
 
 		cout << "\nПерелік номерів, які збіглися: ";
 		for (const auto& elem : busNumbers)

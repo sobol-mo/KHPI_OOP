@@ -35,7 +35,7 @@ public:
 	bool equalDepartedArriving(BusStation& station);
 
 	//Функція пошуку схожих номерів автобусів, що їдуть/приїжджають
-	vector<int> getDepartedArrivingBuses(const BusStation& station);
+	vector<int> findDepartedArrivingBuses(const BusStation& station);
 
 	//Функція друку інформації
 	void printInformation() const;
