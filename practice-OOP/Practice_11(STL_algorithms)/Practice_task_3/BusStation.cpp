@@ -48,7 +48,7 @@ bool BusStation::equalDepartedArriving(BusStation& station)
 	this->sortList();
 	station.sortList();
 
-	//Для порівняння використовуємо перевантаження оператора== у класі Bus
+	//Для порівняння використовуємо перевантаження оператора(==) у класі Bus
 	bool flag = equal(this->departedBuses.begin(), this->departedBuses.end(),
 		station.arrivingBuses.begin());
 

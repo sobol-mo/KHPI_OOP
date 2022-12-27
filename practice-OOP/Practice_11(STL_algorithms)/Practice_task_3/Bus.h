@@ -25,12 +25,12 @@ public:
 	int getBusNumber() const;
 	bool getLocationFlag() const;
 
-	//Перевантаження оператора=
+	//Перевантаження оператора(=)
 	Bus& operator=(const Bus& bus);
 
-	//Перевантаження оператора<, для порівняння номерів
+	//Перевантаження оператора(<), для порівняння номерів
 	bool operator<(const Bus& bus) const;
 
-	//Перевантаження оператора==, для порівняння номерів
+	//Перевантаження оператора(==), для порівняння номерів
 	bool operator==(const Bus& bus) const;
 };

@@ -25,7 +25,7 @@ bool Bus::getLocationFlag() const
 	return this->locationFlag;
 }
 
-//Перевантаження оператора=
+//Перевантаження оператора(=)
 Bus& Bus::operator=(const Bus& bus)
 {
 	this->busNumber = bus.busNumber;
@@ -34,13 +34,13 @@ Bus& Bus::operator=(const Bus& bus)
 	return *this;
 }
 
-//Перевантаження оператора<, для порівняння номерів
+//Перевантаження оператора(<), для порівняння номерів
 bool Bus::operator<(const Bus& bus) const
 {
 	return busNumber < bus.busNumber;
 }
 
-//Перевантаження оператора==, для порівняння номерів
+//Перевантаження оператора(==), для порівняння номерів
 bool Bus::operator==(const Bus& bus) const
 {
 	return busNumber == bus.busNumber;
