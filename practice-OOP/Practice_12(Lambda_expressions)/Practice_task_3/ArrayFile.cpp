@@ -1,6 +1,5 @@
 ﻿#include "ArrayFile.h"
 
-
 int ArrayFile::operator()(const string& path) const
 {
 
