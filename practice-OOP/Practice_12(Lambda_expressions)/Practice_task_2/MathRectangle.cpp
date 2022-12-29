@@ -13,7 +13,6 @@ int MathRectangle::getWidth() const
 	return this->width;
 }
 
-
 int MathRectangle::getHeight() const
 {
 	return this->height;
