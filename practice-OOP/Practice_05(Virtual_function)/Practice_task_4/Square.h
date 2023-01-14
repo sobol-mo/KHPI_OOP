@@ -15,6 +15,6 @@ public:
 	//Перевизначення віртуальної функції пошуку периметру
 	virtual double getPerimeter() const override;
 
-	//Функція підрахунку сторони квадарата
+	//Функція підрахунку сторони квадрата
 	double getSide() const;
 };

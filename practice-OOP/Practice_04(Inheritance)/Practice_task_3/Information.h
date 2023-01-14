@@ -6,7 +6,7 @@ class Information : public WarehouseInfo
 {
 public:
 
-	//Друк інформації про ігрушку
+	//Друк інформації про іграшку
 	void printInfoToy() const;
 
 	//Друк інформації складу іграшок

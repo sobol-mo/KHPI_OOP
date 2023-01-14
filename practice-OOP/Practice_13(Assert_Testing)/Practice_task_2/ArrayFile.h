@@ -6,7 +6,7 @@
 #include <assert.h>
 using namespace std;
 
-//Функція тестування вектора
+//Функція тестування вектору
 void testingVector(const vector<int> vectorInt);
 
 class ArrayFile
@@ -27,6 +27,6 @@ public:
 	//Функція зчитування масиву з файлу
 	vector<int> getArray() const;
 
-	//Функція заміни масива у файлі
+	//Функція заміни масиву у файлі
 	void setArray(const vector<int> vectorInt) const;
 };

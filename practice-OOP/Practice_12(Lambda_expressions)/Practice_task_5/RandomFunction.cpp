@@ -7,7 +7,7 @@ int getRandomNumber(const int min, const int max)
 }
 
 //Перевантаження оператора круглих дужок, яке
-//повертає випадкову метаматичку функцію.
+//повертає випадкову метематичну функцію.
 function<int(const int, const int)> RandomFunction::operator()()
 {
 

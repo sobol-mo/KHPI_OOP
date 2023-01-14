@@ -51,7 +51,7 @@ void ArrayCombination::combination()
     ifstream firstFin(firstPath);
     ifstream secondFin(secondPath);
 
-    if (!firstFin.is_open() && !secondFin.is_open())
+    if (!firstFin.is_open() || !secondFin.is_open())
         return;
 
     for (int i = 0; i < sizeOfArray;)

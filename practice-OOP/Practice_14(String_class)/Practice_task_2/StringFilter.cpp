@@ -9,7 +9,7 @@ void StringFilter::operator()(const string& path, const string& text) const
 
 	//Прапор символу, що зустрічається
 	//0 - зустрівся більше одного разу
-	//1 - застрівся один раз
+	//1 - зустрівся один раз
 	bool flag;
 	
 	//Допоміжний рядок

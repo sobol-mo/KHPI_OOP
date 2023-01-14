@@ -6,7 +6,7 @@ class ArithmeticProgression : public Progression
 {
 public:
 
-	//Функція розрахунку елементку арифметичної прогресії
+	//Функція розрахунку елементу арифметичної прогресії
 	virtual int getElement(const int elemNumber) override;
 
 	//Функція розрахунку суми арифметичної прогресії 

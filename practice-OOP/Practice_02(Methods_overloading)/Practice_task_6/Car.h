@@ -14,7 +14,7 @@ private:
 
 public:
 	//Конструктор з параметрами
-	Car(string carBrand = "brand1", int price = 10);
+	Car(const string& carBrand = "brand1",const int price = 10);
 
 	//Група "гетерів"
 	string getBrand() const;

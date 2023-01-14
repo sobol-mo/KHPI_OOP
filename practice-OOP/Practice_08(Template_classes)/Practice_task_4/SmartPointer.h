@@ -22,7 +22,7 @@ public:
 	//Перевантаження оператора(=)
 	SmartPointer<Type>& operator=(SmartPointer& object);
 
-	//Переватаження оператора(*)
+	//Перевантаження оператора(*)
 	Type& operator*() const;
 
 	//Перевантаження оператора(->)
@@ -78,7 +78,7 @@ SmartPointer<Type>& SmartPointer<Type>::operator=(SmartPointer& object)
 	return *this;
 }
 
-//Переватаження оператора(*)
+//Перевантаження оператора(*)
 template<typename Type>
 Type& SmartPointer<Type>::operator*() const
 {

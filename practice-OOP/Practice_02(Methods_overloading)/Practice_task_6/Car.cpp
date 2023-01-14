@@ -1,7 +1,7 @@
 ﻿#include "Car.h"
 
 //Конструктор з параметрами
-Car::Car(string carBrand, int price)
+Car::Car(const string& carBrand,const int price)
 {
 	this->carBrand = carBrand;
 	this->price = price;

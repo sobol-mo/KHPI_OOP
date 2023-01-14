@@ -12,7 +12,7 @@ bool BirthdayList::deleteByBirthday(const Date& birthday)
 	bool flag = 0;
 
 	//Ставимо покажчик на початок multiset, ітеруємо до кінця
-	//Можна використовувати створений псевдномін або auto
+	//Можна використовувати створений псевдонім або auto
 	for (auto pMultiset = birthdayList.begin(); pMultiset != birthdayList.end(); pMultiset++)
 	{
 
@@ -51,9 +51,9 @@ multiset_iterator BirthdayList::searchPerson(const string& secondName)
 	for (auto pMultiset = birthdayList.begin();; pMultiset++)
 	{
 
-		//Вихід, якщо кінец
+		//Вихід, якщо кінець
 		if (pMultiset == birthdayList.end()) {
-			throw exception("Елемент не знайден!");
+			throw exception("Елемент не знайдено!");
 		}
 
 		//Якщо знайшли, повертаємо покажчик на елемент

@@ -1,6 +1,6 @@
 ﻿#include "ArithmeticProgression.h"
 
-//Функція розрахунку елементку арифметичної прогресії
+//Функція розрахунку елементу арифметичної прогресії
 int ArithmeticProgression::getElement(const int elemNumber)
 {
     return firstElement + step * (elemNumber - 1);

@@ -10,7 +10,7 @@ private:
 
 public:
 	//Конструктор з параметрами
-	CarPark(Car* masCars, int size);
+	CarPark(const Car* masCars,const int size);
 
 	//Конструктор копіювання
 	CarPark(const CarPark& carPark);

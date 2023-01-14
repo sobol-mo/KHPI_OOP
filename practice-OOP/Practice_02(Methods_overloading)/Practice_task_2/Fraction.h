@@ -21,7 +21,7 @@ public:
 	//Конструктор копіювання
 	Fraction(const Fraction& fr);
 
-	//Группа "сетерів"
+	//Група "сетерів"
 	void setNumerator(const int numer);
 	void setDenominator(const int denom);
 

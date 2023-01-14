@@ -19,10 +19,10 @@ public:
 	void setDiameter(const double diameter);
 	double getDiameter() const;
 
-	//Чиста віртуальная функція підрахунку площі
+	//Чиста віртуальна функція підрахунку площі
 	virtual double getArea() const = 0;
 
-	//Чиста віртуальна функція підраухнку периметру
+	//Чиста віртуальна функція підрахунку периметру
 	virtual double getPerimeter() const = 0;
 
 };

@@ -14,7 +14,7 @@ Point::Point(const Point& point)
 	this->y = point.y;
 }
 
-//Перевантаження оператора(<), який порінює суму координат
+//Перевантаження оператора(<), який порівнює суму координат
 bool Point::operator<(const Point& point) const
 {
 	return (this->x + this->y) < (point.x + point.y);

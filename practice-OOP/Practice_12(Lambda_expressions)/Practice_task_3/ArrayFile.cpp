@@ -22,6 +22,6 @@ int ArrayFile::operator()(const string& path) const
 	if (tempVector.size() == 0)
 		throw exception("Вектор порожній!");
 
-	//Повертаємо випадкове значення вектора
+	//Повертаємо випадкове значення вектору
 	return tempVector[rand() % tempVector.size()];
 }

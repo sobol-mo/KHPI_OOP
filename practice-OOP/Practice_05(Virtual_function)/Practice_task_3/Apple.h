@@ -6,7 +6,7 @@ class Apple : public Fruit
 {
 public:
 
-	//Конструктор з параметроми
+	//Конструктор з параметрами
 	Apple(const string& variety, const int price);
 
 	//Перевизначення віртуальної функції друку інформації

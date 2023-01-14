@@ -7,7 +7,7 @@ template Sphere<double>;
 //Конструктор з параметрами
 template<typename Type>
 Sphere<Type>::Sphere(const Type x, const Type y, const Type z, const Type radius):
-	//Явний виклик конструктору батківського класу
+	//Явний виклик конструктору батьківського класу
 	Circle<Type>::Circle(x, y, radius)
 {
 	this->z = z;
@@ -27,7 +27,7 @@ Sphere<Type>::Sphere(const Type radius)
 	this->radius = radius;
 }
 
-//Функція підрахунку площі поверхну
+//Функція підрахунку площі поверхні
 template<typename Type>
 inline Type Sphere<Type>::getSurfaceArea() const
 {

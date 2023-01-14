@@ -10,7 +10,7 @@ public:
 	int sum(const int firstNumber,
             const int secondNumber);
 
-	//Фукція множення
+	//Функція множення
 	int multiplication(const int firstNumber,
 		               const int secondNumber);
 

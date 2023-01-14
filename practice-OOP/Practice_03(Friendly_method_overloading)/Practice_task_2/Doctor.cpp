@@ -35,7 +35,7 @@ istream& operator>>(istream& in, Doctor& doc)
     return in;
 }
 
-//Перевантаження постфіксного декримента
+//Перевантаження постфіксного декременту
 void Doctor::operator--(int)
 {
     this->namePatient = "";

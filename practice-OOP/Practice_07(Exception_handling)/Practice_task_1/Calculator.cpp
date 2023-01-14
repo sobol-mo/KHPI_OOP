@@ -10,7 +10,7 @@ int Calculator::sum(const int firstNumber, const int secondNumber)
     return firstNumber + secondNumber;
 }
 
-//Фукція множення
+//Фукнція множення
 int Calculator::multiplication(const int firstNumber, const int secondNumber)
 {
     //Обробка виключення

@@ -13,13 +13,13 @@ void VectorsCalculator::operator()(const vector<double>& firstVect,
     for (int i = 0; i < firstVect.size() && i < secondVect.size(); i++)
     {
 
-        //В аргументі методу push_back викливаємо функтор
+        //В аргументі методу push_back викликаємо функтор
         //з елементами двох векторів
         resultVector.push_back((*functor)(firstVect[i], secondVect[i]));
     }
 }
 
-//Друк результуючого вектора
+//Друк результуючого вектору
 void VectorsCalculator::printResult() const
 {
     if (resultVector.empty())

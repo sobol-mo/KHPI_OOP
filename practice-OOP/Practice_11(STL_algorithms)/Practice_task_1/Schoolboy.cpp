@@ -11,7 +11,7 @@ Schoolboy::Schoolboy(const string& name, const vector<int>& grades)
 {
 	this->name = name;
 
-	//Копіюємо вміст вектора
+	//Копіюємо вміст вектору
 	copy(grades.begin(), grades.end(), back_inserter(this->grades));
 }
 

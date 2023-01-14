@@ -14,7 +14,7 @@ protected:
 	//Ігрове поле
 	char field[SIZE_FIELD][SIZE_FIELD];
 
-	//Функція оновленя поля
+	//Функція оновлення поля
 	void fieldUpdate();
 
 public:

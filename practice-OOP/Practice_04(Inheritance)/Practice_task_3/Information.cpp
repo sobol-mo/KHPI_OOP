@@ -1,6 +1,6 @@
 ﻿#include "Information.h"
 
-//Друк інформації про ігрушку
+//Друк інформації про іграшку
 void Information::printInfoToy() const
 {
 	cout << "Назва іграшки: " << getName() << endl;
