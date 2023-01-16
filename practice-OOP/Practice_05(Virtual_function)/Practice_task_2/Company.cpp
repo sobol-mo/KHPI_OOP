@@ -15,7 +15,7 @@ void Company::printInfo() const
 	{
 		cout << team[i]->getPosition() <<
 			": " << team[i]->getName() <<
-			", заробітня плата: " << 
+			", заробітна плата: " << 
 			team[i]->getSalary(this->income, this->teamSize) 
 			<< endl;
 	}

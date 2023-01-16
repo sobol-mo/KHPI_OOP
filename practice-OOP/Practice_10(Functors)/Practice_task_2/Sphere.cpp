@@ -1,6 +1,6 @@
 ﻿#include "Sphere.h"
 
-//Конструктор з параметрами за замовчуваням
+//Конструктор з параметрами за замовчуванням
 Sphere::Sphere(const string& color, const double volume)
 {
 	this->color = color;

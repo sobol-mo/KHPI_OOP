@@ -6,7 +6,7 @@ class GeometricProgression : public Progression
 {
 public:
 
-	//Функція розрахунку елементку геометричної прогресії
+	//Функція розрахунку елементу геометричної прогресії
 	virtual int getElement(const int elemNumber) override;
 
 	//Функція розрахунку суми геометричної прогресії 

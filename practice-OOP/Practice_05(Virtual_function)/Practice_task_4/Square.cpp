@@ -18,7 +18,7 @@ double Square::getPerimeter() const
 	return this->getSide() * 4;
 }
 
-//Функція підрахунку сторони квадарата
+//Функція підрахунку сторони квадрата
 double Square::getSide() const
 {
 	return diameter / sqrt(2);

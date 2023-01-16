@@ -1,7 +1,7 @@
 ﻿#include "CarPark.h"
 
 //Конструктор з параметрами
-CarPark::CarPark(Car* masCars, int size)
+CarPark::CarPark(const Car* masCars,const int size)
 {
 	this->masCars = new Car[size];
 	this->size = size;

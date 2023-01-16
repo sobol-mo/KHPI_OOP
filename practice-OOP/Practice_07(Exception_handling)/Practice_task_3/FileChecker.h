@@ -21,6 +21,6 @@ public:
     //Сетер поля класу
     void setCheckSymbol(const char checkSymbol);
 
-    //Функція пошуку символа у файлі
+    //Функція пошуку символу у файлі
     void checkFile(const string& path) const;
 };

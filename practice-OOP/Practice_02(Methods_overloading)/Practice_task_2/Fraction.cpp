@@ -20,7 +20,7 @@ Fraction::Fraction(const Fraction& fr)
 	this->denominator = fr.denominator;
 }
 
-//Группа "сетерів"
+//Група "сетерів"
 void Fraction::setNumerator(const int numer)
 {
 	this->numerator = numer;

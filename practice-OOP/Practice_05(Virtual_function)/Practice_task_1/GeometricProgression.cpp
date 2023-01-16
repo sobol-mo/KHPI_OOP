@@ -1,6 +1,6 @@
 ﻿#include "GeometricProgression.h"
 
-//Функція розрахунку елементку геометричної прогресії
+//Функція розрахунку елементу геометричної прогресії
 int GeometricProgression::getElement(const int elemNumber)
 {
 	int tempElement = 1;

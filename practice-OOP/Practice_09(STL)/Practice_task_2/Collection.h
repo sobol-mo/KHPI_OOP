@@ -2,8 +2,6 @@
 
 #include <map>
 #include "GemstoneInfo.h"
-#include <utility>
-
 
 template<typename Type>
 class Collection

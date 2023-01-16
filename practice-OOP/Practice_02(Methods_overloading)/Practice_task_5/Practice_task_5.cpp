@@ -37,7 +37,7 @@ int main()
     Cents centsFirst(157);
     Cents centsSecond(253);
 
-    cout << " --- Друк зміних ---\n";
+    cout << " --- Друк змінних ---\n";
     cout << "Перша кількість доларів: " <<
         dollarsFirst.getDollars() << endl;
     cout << "Друга кількість доларів: " <<

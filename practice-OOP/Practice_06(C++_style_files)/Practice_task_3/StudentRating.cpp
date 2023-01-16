@@ -95,7 +95,7 @@ void StudentRating::readFile(const string& path)
 	{
 		fin >> studentRating[numbeOfStudents++];
 
-		//Якщо кінцець файлу вихід із циклу
+		//Якщо кінець файлу вихід із циклу
 		if (fin.eof()) {
 			numbeOfStudents--;
 			break;

@@ -88,7 +88,7 @@ void FileManager::removeElements(const int year)
 	for (auto pList = fileCatalog.begin(); pList != fileCatalog.end();)
 	{
 
-		//Якщо рік збігся видаляємл елемент і
+		//Якщо рік збігся видаляємо елемент і
 		//оновлюємо ітератор
 		if(pList->getCreationYear() < year){ 
 		

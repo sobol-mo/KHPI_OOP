@@ -1,6 +1,6 @@
 ﻿#include "ArrayFile.h"
 
-//Функція тестування вектора
+//Функція тестування вектору
 void testingVector(const vector<int> vectorInt) {
 
 	int sum = 0;
@@ -49,7 +49,7 @@ vector<int> ArrayFile::getArray() const
 	return vectorInt;
 }
 
-//Функція заміни масива в файлі
+//Функція заміни масиву в файлі
 void ArrayFile::setArray(const vector<int> vectorInt) const
 {
 	ofstream fout(path);

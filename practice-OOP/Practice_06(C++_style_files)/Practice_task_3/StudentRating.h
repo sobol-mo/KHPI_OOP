@@ -3,7 +3,7 @@
 #include "Student.h"
 #include <fstream>
 
-//Розмір рейтингово списку
+//Розмір рейтингового списку
 #define SIZE 15
 
 class StudentRating

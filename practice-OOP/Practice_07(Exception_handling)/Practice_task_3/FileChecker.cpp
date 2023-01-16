@@ -18,7 +18,7 @@ void FileChecker::setCheckSymbol(const char checkSymbol)
     this->checkSymbol = checkSymbol;
 }
 
-//Функція пошуку символа у файлі
+//Функція пошуку символу у файлі
 void FileChecker::checkFile(const string& path) const
 {
     ifstream fin(path);

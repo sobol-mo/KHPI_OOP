@@ -15,7 +15,7 @@ private:
 
 public:
 
-	//Конструктор з параметрами за замовчуваням
+	//Конструктор з параметрами за замовчуванням
 	Sphere(const string& color = "",
 	       const double volume = 0);
 

@@ -1,6 +1,6 @@
 ﻿#include "Apple.h"
 
-//Конструктор з параметроми
+//Конструктор з параметрами
 Apple::Apple(const string& variety, const int price):
 	Fruit(variety, price)
 {

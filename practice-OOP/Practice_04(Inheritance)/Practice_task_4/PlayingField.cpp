@@ -1,6 +1,6 @@
 ﻿#include "PlayingField.h"
 
-//Функція оновленя поля
+//Функція оновлення поля
 void PlayingField::fieldUpdate()
 {
 	for (int i = 0; i < SIZE_FIELD; i++)

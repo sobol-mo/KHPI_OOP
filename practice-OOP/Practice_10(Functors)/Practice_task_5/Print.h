@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 //Клас-функтор для
-//друку контейрнера map
+//друку контейнера map
 class Print
 {
 public:

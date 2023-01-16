@@ -22,6 +22,6 @@ public:
 	//Перевантаження оператора(<<)
 	friend ostream& operator<<(ostream& out, const Point& point);
 
-	//Перевантаження оператора(<), який порінює суму координат
+	//Перевантаження оператора(<), який порівнює суму координат
 	bool operator<(const Point& point) const;
 };

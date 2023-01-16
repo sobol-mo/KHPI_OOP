@@ -50,7 +50,7 @@ int main()
         cout << city << endl;
     }
 
-    //Сортування vector за допомогою функутора
+    //Сортування vector за допомогою функтора
     //реалізованого у класі City
     sort(cities.begin(), cities.end(), City());
 

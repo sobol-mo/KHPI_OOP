@@ -71,7 +71,7 @@ void ArrayInt::readArrayFromBinFile(const string& path)
 		arraySize++;
 	}
 
-	//Якщо файл пустий вихід з функції
+	//Якщо файл порожній, вихід з функції
 	if (arraySize == 0) {
 		fin.close();
 		return;

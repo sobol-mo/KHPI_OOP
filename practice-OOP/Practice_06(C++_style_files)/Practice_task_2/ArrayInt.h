@@ -13,7 +13,7 @@ private:
 	//Масив
 	int* array;
 
-	//Розмів масиву
+	//Розмір масиву
 	int arraySize;
 
 public:
